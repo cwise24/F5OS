@@ -1,0 +1,2313 @@
+2023-10-24 16:02:21,124 p=98808 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:02:21,134 p=98808 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:02:21,501 p=98808 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:02:21,502 p=98808 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "changed": false, "msg": "invalid literal for int() with base 10: '\"8888\"'", "status": -1, "url": "https://\"10.154.54.65\":\"8888\"/restconf/data/openconfig-system:system/aaa"}
+2023-10-24 16:02:21,502 p=98808 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:02:21,502 p=98808 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:02:44,266 p=98857 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:02:44,274 p=98857 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:02:44,603 p=98857 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:02:44,603 p=98857 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "changed": false, "msg": "invalid literal for int() with base 10: '\"8888\"'", "status": -1, "url": "https://\"10.154.54.65\":\"8888\"/restconf/data/openconfig-system:system/aaa"}
+2023-10-24 16:02:44,603 p=98857 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:02:44,603 p=98857 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:03:29,496 p=98913 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:03:29,504 p=98913 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:03:29,514 p=98913 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"msg": "template error while templating string: unexpected ':'. String: https://\"{{ ansible_host +:+ ansible_port }}\"/restconf/data/openconfig-system:system/aaa. unexpected ':'"}
+2023-10-24 16:03:29,515 p=98913 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:03:29,515 p=98913 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:05:29,433 p=98989 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:05:29,441 p=98989 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:05:29,906 p=98989 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:05:29,906 p=98989 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "changed": false, "content": "", "elapsed": 0, "msg": "Status code was -1 and not [200, 201, 202, 204]: Request failed: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)>", "redirected": false, "status": -1, "url": "https://10.154.54.65:8888/restconf/data/openconfig-system:system/aaa"}
+2023-10-24 16:05:29,906 p=98989 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:05:29,907 p=98989 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:05:59,783 p=99037 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:05:59,792 p=99037 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:06:00,383 p=99037 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:06:00,383 p=99037 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "changed": false, "connection": "close", "content": "\n<errors xmlns=\"urn:ietf:params:xml:ns:yang:ietf-restconf\">\n  <error>\n    <error-type>protocol</error-type>\n    <error-tag>access-denied</error-tag>\n  </error>\n</errors>\n", "content_length": "170", "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';", "content_type": "application/yang-data+xml", "date": "Tue, 24 Oct 2023 23:06:00 GMT", "elapsed": 0, "msg": "Status code was 401 and not [200]: HTTP Error 401: Unauthorized", "redirected": false, "server": "Apache", "status": 401, "strict_transport_security": "max-age=15552000; includeSubDomains", "url": "https://10.154.54.65:8888/restconf/data/openconfig-system:system/aaa", "x_content_type_options": "nosniff", "x_frame_options": "DENY", "x_xss_protection": "1; mode=block"}
+2023-10-24 16:06:00,384 p=99037 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:06:00,384 p=99037 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:09:07,285 p=99112 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:09:07,295 p=99112 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:09:07,880 p=99112 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:09:07,880 p=99112 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "changed": false, "connection": "close", "content": "\n<errors xmlns=\"urn:ietf:params:xml:ns:yang:ietf-restconf\">\n  <error>\n    <error-type>protocol</error-type>\n    <error-tag>access-denied</error-tag>\n  </error>\n</errors>\n", "content_length": "170", "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';", "content_type": "application/yang-data+xml", "date": "Tue, 24 Oct 2023 23:09:07 GMT", "elapsed": 0, "msg": "Status code was 401 and not [200]: HTTP Error 401: Unauthorized", "redirected": false, "server": "Apache", "status": 401, "strict_transport_security": "max-age=15552000; includeSubDomains", "url": "https://10.154.54.65:8888/restconf/data/openconfig-system:system/aaa", "x_content_type_options": "nosniff", "x_frame_options": "DENY", "x_xss_protection": "1; mode=block"}
+2023-10-24 16:09:07,880 p=99112 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:09:07,880 p=99112 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:10:37,172 p=99160 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:10:37,181 p=99160 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:10:37,891 p=99160 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:10:37,891 p=99160 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "changed": false, "connection": "close", "content": "\n<errors xmlns=\"urn:ietf:params:xml:ns:yang:ietf-restconf\">\n  <error>\n    <error-type>protocol</error-type>\n    <error-tag>access-denied</error-tag>\n  </error>\n</errors>\n", "content_length": "170", "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';", "content_type": "application/yang-data+xml", "date": "Tue, 24 Oct 2023 23:10:37 GMT", "elapsed": 0, "msg": "Status code was 401 and not [200]: HTTP Error 401: Unauthorized", "redirected": false, "server": "Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2zc-fips-dev", "status": 401, "strict_transport_security": "max-age=15552000; includeSubDomains", "url": "https://10.154.54.60:8888/restconf/data/openconfig-system:system/aaa", "x_content_type_options": "nosniff", "x_frame_options": "DENY", "x_xss_protection": "1; mode=block"}
+2023-10-24 16:10:37,891 p=99160 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:10:37,891 p=99160 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:12:07,390 p=99222 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:12:07,399 p=99222 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:12:07,990 p=99222 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:12:07,990 p=99222 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "changed": false, "connection": "close", "content": "\n<errors xmlns=\"urn:ietf:params:xml:ns:yang:ietf-restconf\">\n  <error>\n    <error-type>protocol</error-type>\n    <error-tag>access-denied</error-tag>\n  </error>\n</errors>\n", "content_length": "170", "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';", "content_type": "application/yang-data+xml", "date": "Tue, 24 Oct 2023 23:12:07 GMT", "elapsed": 0, "msg": "Status code was 401 and not [200]: HTTP Error 401: Unauthorized", "redirected": false, "server": "Apache", "status": 401, "strict_transport_security": "max-age=15552000; includeSubDomains", "url": "https://10.154.54.64:8888/restconf/data/openconfig-system:system/aaa", "x_content_type_options": "nosniff", "x_frame_options": "DENY", "x_xss_protection": "1; mode=block"}
+2023-10-24 16:12:07,990 p=99222 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:12:07,991 p=99222 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:12:19,994 p=99259 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:12:20,001 p=99259 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:12:20,625 p=99259 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:12:20,626 p=99259 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "changed": false, "connection": "close", "content": "\n<errors xmlns=\"urn:ietf:params:xml:ns:yang:ietf-restconf\">\n  <error>\n    <error-type>protocol</error-type>\n    <error-tag>access-denied</error-tag>\n  </error>\n</errors>\n", "content_length": "170", "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';", "content_type": "application/yang-data+xml", "date": "Tue, 24 Oct 2023 23:12:20 GMT", "elapsed": 0, "msg": "Status code was 401 and not [200]: HTTP Error 401: Unauthorized", "redirected": false, "server": "Apache", "status": 401, "strict_transport_security": "max-age=15552000; includeSubDomains", "url": "https://10.154.54.64:8888/restconf/data/openconfig-system:system/aaa", "x_content_type_options": "nosniff", "x_frame_options": "DENY", "x_xss_protection": "1; mode=block"}
+2023-10-24 16:12:20,627 p=99259 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:12:20,627 p=99259 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:16:54,138 p=99455 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:16:54,147 p=99455 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:16:54,732 p=99455 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:16:54,732 p=99455 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "changed": false, "connection": "close", "content": "\n<errors xmlns=\"urn:ietf:params:xml:ns:yang:ietf-restconf\">\n  <error>\n    <error-type>protocol</error-type>\n    <error-tag>access-denied</error-tag>\n  </error>\n</errors>\n", "content_length": "170", "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';", "content_type": "application/yang-data+xml", "date": "Tue, 24 Oct 2023 23:16:54 GMT", "elapsed": 0, "msg": "Status code was 401 and not [200]: HTTP Error 401: Unauthorized", "redirected": false, "server": "Apache", "status": 401, "strict_transport_security": "max-age=15552000; includeSubDomains", "url": "https://10.154.54.65:8888/restconf/data/openconfig-system:system/aaa", "x_content_type_options": "nosniff", "x_frame_options": "DENY", "x_xss_protection": "1; mode=block"}
+2023-10-24 16:16:54,732 p=99455 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:16:54,732 p=99455 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:17:39,480 p=99510 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:17:39,488 p=99510 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:17:40,101 p=99510 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:17:40,101 p=99510 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "changed": false, "connection": "close", "content": "\n<errors xmlns=\"urn:ietf:params:xml:ns:yang:ietf-restconf\">\n  <error>\n    <error-type>protocol</error-type>\n    <error-tag>access-denied</error-tag>\n  </error>\n</errors>\n", "content_length": "170", "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';", "content_type": "application/yang-data+xml", "date": "Tue, 24 Oct 2023 23:17:40 GMT", "elapsed": 0, "msg": "Status code was 401 and not [200]: HTTP Error 401: Unauthorized", "redirected": false, "server": "Apache", "status": 401, "strict_transport_security": "max-age=15552000; includeSubDomains", "url": "https://10.154.54.65:8888/restconf/data/openconfig-system:system/aaa", "x_content_type_options": "nosniff", "x_frame_options": "DENY", "x_xss_protection": "1; mode=block"}
+2023-10-24 16:17:40,101 p=99510 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:17:40,101 p=99510 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:19:54,641 p=99589 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:19:54,650 p=99589 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:19:55,408 p=99589 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:19:55,408 p=99589 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:19:55,410 p=99589 u=C.Wise n=ansible | TASK [Debug] *****************************************************************************************************************************************************************
+2023-10-24 16:19:55,421 p=99589 u=C.Wise n=ansible | ok: [10900-1] => {
+    "token": {
+        "ansible_facts": {
+            "discovered_interpreter_python": "/opt/homebrew/bin/python3.11"
+        },
+        "cache_control": "private, no-cache, must-revalidate, proxy-revalidate",
+        "changed": false,
+        "connection": "close",
+        "content": "\n<aaa xmlns=\"http://openconfig.net/yang/system\"  xmlns:oc-sys=\"http://openconfig.net/yang/system\">\n  <authentication>\n    <config>\n      <authentication-method xmlns:oc-aaa-types=\"http://openconfig.net/yang/aaa/types\">oc-aaa-types:LOCAL</authentication-method>\n      <authentication-method xmlns:oc-aaa-types=\"http://openconfig.net/yang/aaa/types\">oc-aaa-types:TACACS_ALL</authentication-method>\n      <basic xmlns=\"http://f5.com/yang/aaa-confd-restconf-token\">\n        <enabled>true</enabled>\n      </basic>\n      <cert-auth xmlns=\"http://f5.com/yang/openconfig-aaa-clientcert\">\n        <enabled>false</enabled>\n      </cert-auth>\n    </config>\n    <state>\n      <basic xmlns=\"http://f5.com/yang/aaa-confd-restconf-token\">\n        <enabled>true</enabled>\n      </basic>\n      <cert-auth xmlns=\"http://f5.com/yang/openconfig-aaa-clientcert\">\n        <enabled>false</enabled>\n      </cert-auth>\n    </state>\n    <state xmlns=\"http://f5.com/yang/aaa-confd-restconf-token\">\n      <basic>\n        <enabled>true</enabled>\n      </basic>\n    </state>\n    <clientcert xmlns=\"http://f5.com/yang/openconfig-aaa-clientcert\">\n      <config>\n        <client-cert-name-field>subjectname-cn</client-cert-name-field>\n        <OID>UPN</OID>\n      </config>\n      <state>\n        <client-cert-name-field>subjectname-cn</client-cert-name-field>\n        <OID>UPN</OID>\n      </state>\n    </clientcert>\n    <ldap xmlns=\"http://f5.com/yang/openconfig-aaa-ldap\">\n      <bind_timelimit>10</bind_timelimit>\n      <timelimit>0</timelimit>\n      <idle_timelimit>0</idle_timelimit>\n      <ldap_version>3</ldap_version>\n      <ssl>off</ssl>\n      <active_directory>false</active_directory>\n      <tls_reqcert>demand</tls_reqcert>\n      <chase-referrals>true</chase-referrals>\n    </ldap>\n    <ocsp xmlns=\"http://f5.com/yang/openconfig-aaa-ocsp\">\n      <config>\n        <override-responder>off</override-responder>\n        <response-max-age>-1</response-max-age>\n        <response-time-skew>300</response-time-skew>\n        <nonce-request>on</nonce-request>\n        <enabled>false</enabled>\n      </config>\n      <state>\n        <override-responder>off</override-responder>\n        <response-max-age>-1</response-max-age>\n        <response-time-skew>300</response-time-skew>\n        <nonce-request>on</nonce-request>\n        <enabled>false</enabled>\n      </state>\n    </ocsp>\n    <users xmlns=\"http://f5.com/yang/system-aaa\">\n      <user>\n        <username>********</username>\n        <config>\n          <username>********</username>\n          <last-change>2023-02-18</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>-1</expiry-date>\n          <role>********</role>\n          <expiry-status>enabled</expiry-status>\n        </config>\n        <state>\n          <authorized-keys>-</authorized-keys>\n          <username>********</username>\n          <last-change>2023-02-18</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>-1</expiry-date>\n          <role>********</role>\n          <expiry-status>enabled</expiry-status>\n        </state>\n      </user>\n      <user>\n        <username>cw-tenant2</username>\n        <config>\n          <username>cw-tenant2</username>\n          <last-change>0</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>1</expiry-date>\n          <role>tenant-console</role>\n          <expiry-status>locked</expiry-status>\n        </config>\n        <state>\n          <authorized-keys>-</authorized-keys>\n          <username>cw-tenant2</username>\n          <last-change>0</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>1</expiry-date>\n          <role>tenant-console</role>\n          <expiry-status>locked</expiry-status>\n        </state>\n      </user>\n      <user>\n        <username>jgranieri-sec-tenant</username>\n        <config>\n          <username>jgranieri-sec-tenant</username>\n          <last-change>0</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>1</expiry-date>\n          <role>tenant-console</role>\n          <expiry-status>locked</expiry-status>\n        </config>\n        <state>\n          <authorized-keys>-</authorized-keys>\n          <username>jgranieri-sec-tenant</username>\n          <last-change>0</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>1</expiry-date>\n          <role>tenant-console</role>\n          <expiry-status>locked</expiry-status>\n        </state>\n      </user>\n      <user>\n        <username>root</username>\n        <config>\n          <username>root</username>\n          <last-change>2023-02-18</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>-1</expiry-date>\n          <role>root</role>\n          <expiry-status>enabled</expiry-status>\n        </config>\n        <state>\n          <username>root</username>\n          <last-change>2023-02-18</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>-1</expiry-date>\n          <role>root</role>\n          <expiry-status>enabled</expiry-status>\n        </state>\n      </user>\n      <user>\n        <username>tenant1</username>\n        <config>\n          <username>tenant1</username>\n          <last-change>0</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>1</expiry-date>\n          <role>tenant-console</role>\n          <expiry-status>locked</expiry-status>\n        </config>\n        <state>\n          <authorized-keys>-</authorized-keys>\n          <username>tenant1</username>\n          <last-change>0</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>1</expiry-date>\n          <role>tenant-console</role>\n          <expiry-status>locked</expiry-status>\n        </state>\n      </user>\n      <user>\n        <username>wzhu</username>\n        <config>\n          <username>wzhu</username>\n          <last-change>0</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>1</expiry-date>\n          <role>tenant-console</role>\n          <expiry-status>locked</expiry-status>\n        </config>\n        <state>\n          <authorized-keys>-</authorized-keys>\n          <username>wzhu</username>\n          <last-change>0</last-change>\n          <tally-count>0</tally-count>\n          <expiry-date>1</expiry-date>\n          <role>tenant-console</role>\n          <expiry-status>locked</expiry-status>\n        </state>\n      </user>\n    </users>\n    <roles xmlns=\"http://f5.com/yang/system-aaa\">\n      <role>\n        <rolename>********</rolename>\n        <config>\n          <rolename>********</rolename>\n          <gid>9000</gid>\n        </config>\n        <state>\n          <rolename>********</rolename>\n          <gid>9000</gid>\n          <remote-gid>-</remote-gid>\n        </state>\n      </role>\n      <role>\n        <rolename>operator</rolename>\n        <config>\n          <rolename>operator</rolename>\n          <gid>9001</gid>\n        </config>\n        <state>\n          <rolename>operator</rolename>\n          <gid>9001</gid>\n          <remote-gid>-</remote-gid>\n        </state>\n      </role>\n      <role>\n        <rolename>resource-********</rolename>\n        <config>\n          <rolename>resource-********</rolename>\n          <gid>9003</gid>\n        </config>\n        <state>\n          <rolename>resource-********</rolename>\n          <gid>9003</gid>\n          <remote-gid>-</remote-gid>\n        </state>\n      </role>\n      <role>\n        <rolename>tenant-console</rolename>\n        <config>\n          <rolename>tenant-console</rolename>\n          <gid>9100</gid>\n        </config>\n        <state>\n          <rolename>tenant-console</rolename>\n          <gid>9100</gid>\n          <remote-gid>-</remote-gid>\n        </state>\n      </role>\n    </roles>\n  </authentication>\n  <restconf-token xmlns=\"http://f5.com/yang/aaa-confd-restconf-token\">\n    <config>\n      <lifetime>30</lifetime>\n    </config>\n    <state>\n      <lifetime>30</lifetime>\n    </state>\n  </restconf-token>\n  <password-policy xmlns=\"http://f5.com/yang/openconfig-aaa-password-policy\">\n    <config>\n      <min-length>6</min-length>\n      <required-numeric>0</required-numeric>\n      <required-uppercase>0</required-uppercase>\n      <required-lowercase>0</required-lowercase>\n      <required-special>0</required-special>\n      <required-differences>8</required-differences>\n      <reject-username>false</reject-username>\n      <apply-to-root>true</apply-to-root>\n      <retries>3</retries>\n      <max-login-failures>10</max-login-failures>\n      <unlock-time>60</unlock-time>\n      <root-lockout>true</root-lockout>\n      <root-unlock-time>60</root-unlock-time>\n      <max-age>0</max-age>\n    </config>\n  </password-policy>\n  <tls xmlns=\"http://f5.com/yang/openconfig-aaa-tls\">\n    <config>\n      <verify-client>false</verify-client>\n      <verify-client-depth>1</verify-client-depth>\n    </config>\n    <state>\n      <verify-client>false</verify-client>\n      <verify-client-depth>1</verify-client-depth>\n    </state>\n  </tls>\n  <primary-key xmlns=\"http://f5.com/yang/primary-key\">\n    <state>\n      <hash>At8X6fQWAYixVTLVZcWWelTG+fw/tn8MI7AVX7M1/gRgZghCB3oGiG3BoBlx5IM/pzKie5vvcY7CnUJVM5Q7dw==</hash>\n      <status>NONE</status>\n    </state>\n  </primary-key>\n</aaa>\n",
+        "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';",
+        "content_type": "application/yang-data+xml",
+        "cookies": {},
+        "cookies_string": "",
+        "date": "Tue, 24 Oct 2023 23:19:55 GMT",
+        "elapsed": 0,
+        "etag": "\"1698-175006-642714\"",
+        "failed": false,
+        "last_modified": "Tue, 24 Oct 2023 19:16:46 GMT",
+        "msg": "OK (unknown bytes)",
+        "pragma": "no-cache",
+        "redirected": false,
+        "server": "Apache",
+        "status": 200,
+        "strict_transport_security": "max-age=15552000; includeSubDomains",
+        "transfer_encoding": "chunked",
+        "url": "https://10.154.54.65:8888/restconf/data/openconfig-system:system/aaa",
+        "warnings": [
+            "Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information."
+        ],
+        "x_auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTZXNzaW9uIElEIjoiYWRtaW4xNjk4MTg5NTk1IiwiYXV0aGluZm8iOiJhZG1pbiAxMDAwIDkwMDAgXC90bXAiLCJidWZmZXJ0aW1lbGltaXQiOiI2MDAiLCJleHAiOjE2OTgxOTEzOTUsImlhdCI6MTY5ODE4OTU5NSwicmVuZXdsaW1pdCI6IjUiLCJ1c2VyaW5mbyI6ImFkbWluIDE3Mi4xOC45LjExOSJ9.DHVD9vR9DnA8IfGS0aJ1fmLyjT57vkM42d-mHBeEdRk",
+        "x_content_type_options": "nosniff",
+        "x_frame_options": "DENY",
+        "x_xss_protection": "1; mode=block"
+    }
+}
+2023-10-24 16:19:55,426 p=99589 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:19:55,426 p=99589 u=C.Wise n=ansible | 10900-1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:22:55,257 p=99678 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:22:55,266 p=99678 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:22:55,993 p=99678 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:22:55,993 p=99678 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:22:55,995 p=99678 u=C.Wise n=ansible | TASK [Debug] *****************************************************************************************************************************************************************
+2023-10-24 16:22:56,010 p=99678 u=C.Wise n=ansible | ok: [10900-1] => {
+    "token": {
+        "ansible_facts": {
+            "discovered_interpreter_python": "/opt/homebrew/bin/python3.11"
+        },
+        "cache_control": "private, no-cache, must-revalidate, proxy-revalidate",
+        "changed": false,
+        "connection": "close",
+        "content": "{\n  \"openconfig-system:aaa\": {\n    \"authentication\": {\n      \"config\": {\n        \"authentication-method\": [\"openconfig-aaa-types:LOCAL\", \"openconfig-aaa-types:TACACS_ALL\"],\n        \"f5-aaa-confd-restconf-token:basic\": {\n          \"enabled\": true\n        },\n        \"f5-openconfig-aaa-clientcert:cert-auth\": {\n          \"enabled\": false\n        }\n      },\n      \"state\": {\n        \"f5-aaa-confd-restconf-token:basic\": {\n          \"enabled\": true\n        },\n        \"f5-openconfig-aaa-clientcert:cert-auth\": {\n          \"enabled\": false\n        }\n      },\n      \"f5-aaa-confd-restconf-token:state\": {\n        \"basic\": {\n          \"enabled\": true\n        }\n      },\n      \"f5-openconfig-aaa-clientcert:clientcert\": {\n        \"config\": {\n          \"client-cert-name-field\": \"subjectname-cn\",\n          \"OID\": \"UPN\"\n        },\n        \"state\": {\n          \"client-cert-name-field\": \"subjectname-cn\",\n          \"OID\": \"UPN\"\n        }\n      },\n      \"f5-openconfig-aaa-ldap:ldap\": {\n        \"bind_timelimit\": 10,\n        \"timelimit\": 0,\n        \"idle_timelimit\": 0,\n        \"ldap_version\": 3,\n        \"ssl\": \"off\",\n        \"active_directory\": false,\n        \"tls_reqcert\": \"demand\",\n        \"chase-referrals\": true\n      },\n      \"f5-openconfig-aaa-ocsp:ocsp\": {\n        \"config\": {\n          \"override-responder\": \"off\",\n          \"response-max-age\": -1,\n          \"response-time-skew\": 300,\n          \"nonce-request\": \"on\",\n          \"enabled\": false\n        },\n        \"state\": {\n          \"override-responder\": \"off\",\n          \"response-max-age\": -1,\n          \"response-time-skew\": 300,\n          \"nonce-request\": \"on\",\n          \"enabled\": false\n        }\n      },\n      \"f5-system-aaa:users\": {\n        \"user\": [\n          {\n            \"username\": \"********\",\n            \"config\": {\n              \"username\": \"********\",\n              \"last-change\": \"2023-02-18\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"-1\",\n              \"role\": \"********\",\n              \"expiry-status\": \"enabled\"\n            },\n            \"state\": {\n              \"authorized-keys\": \"-\",\n              \"username\": \"********\",\n              \"last-change\": \"2023-02-18\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"-1\",\n              \"role\": \"********\",\n              \"expiry-status\": \"enabled\"\n            }\n          },\n          {\n            \"username\": \"cw-tenant2\",\n            \"config\": {\n              \"username\": \"cw-tenant2\",\n              \"last-change\": \"0\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"1\",\n              \"role\": \"tenant-console\",\n              \"expiry-status\": \"locked\"\n            },\n            \"state\": {\n              \"authorized-keys\": \"-\",\n              \"username\": \"cw-tenant2\",\n              \"last-change\": \"0\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"1\",\n              \"role\": \"tenant-console\",\n              \"expiry-status\": \"locked\"\n            }\n          },\n          {\n            \"username\": \"jgranieri-sec-tenant\",\n            \"config\": {\n              \"username\": \"jgranieri-sec-tenant\",\n              \"last-change\": \"0\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"1\",\n              \"role\": \"tenant-console\",\n              \"expiry-status\": \"locked\"\n            },\n            \"state\": {\n              \"authorized-keys\": \"-\",\n              \"username\": \"jgranieri-sec-tenant\",\n              \"last-change\": \"0\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"1\",\n              \"role\": \"tenant-console\",\n              \"expiry-status\": \"locked\"\n            }\n          },\n          {\n            \"username\": \"root\",\n            \"config\": {\n              \"username\": \"root\",\n              \"last-change\": \"2023-02-18\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"-1\",\n              \"role\": \"root\",\n              \"expiry-status\": \"enabled\"\n            },\n            \"state\": {\n              \"username\": \"root\",\n              \"last-change\": \"2023-02-18\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"-1\",\n              \"role\": \"root\",\n              \"expiry-status\": \"enabled\"\n            }\n          },\n          {\n            \"username\": \"tenant1\",\n            \"config\": {\n              \"username\": \"tenant1\",\n              \"last-change\": \"0\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"1\",\n              \"role\": \"tenant-console\",\n              \"expiry-status\": \"locked\"\n            },\n            \"state\": {\n              \"authorized-keys\": \"-\",\n              \"username\": \"tenant1\",\n              \"last-change\": \"0\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"1\",\n              \"role\": \"tenant-console\",\n              \"expiry-status\": \"locked\"\n            }\n          },\n          {\n            \"username\": \"wzhu\",\n            \"config\": {\n              \"username\": \"wzhu\",\n              \"last-change\": \"0\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"1\",\n              \"role\": \"tenant-console\",\n              \"expiry-status\": \"locked\"\n            },\n            \"state\": {\n              \"authorized-keys\": \"-\",\n              \"username\": \"wzhu\",\n              \"last-change\": \"0\",\n              \"tally-count\": 0,\n              \"expiry-date\": \"1\",\n              \"role\": \"tenant-console\",\n              \"expiry-status\": \"locked\"\n            }\n          }\n        ]\n      },\n      \"f5-system-aaa:roles\": {\n        \"role\": [\n          {\n            \"rolename\": \"********\",\n            \"config\": {\n              \"rolename\": \"********\",\n              \"gid\": 9000\n            },\n            \"state\": {\n              \"rolename\": \"********\",\n              \"gid\": 9000,\n              \"remote-gid\": \"-\"\n            }\n          },\n          {\n            \"rolename\": \"operator\",\n            \"config\": {\n              \"rolename\": \"operator\",\n              \"gid\": 9001\n            },\n            \"state\": {\n              \"rolename\": \"operator\",\n              \"gid\": 9001,\n              \"remote-gid\": \"-\"\n            }\n          },\n          {\n            \"rolename\": \"resource-********\",\n            \"config\": {\n              \"rolename\": \"resource-********\",\n              \"gid\": 9003\n            },\n            \"state\": {\n              \"rolename\": \"resource-********\",\n              \"gid\": 9003,\n              \"remote-gid\": \"-\"\n            }\n          },\n          {\n            \"rolename\": \"tenant-console\",\n            \"config\": {\n              \"rolename\": \"tenant-console\",\n              \"gid\": 9100\n            },\n            \"state\": {\n              \"rolename\": \"tenant-console\",\n              \"gid\": 9100,\n              \"remote-gid\": \"-\"\n            }\n          }\n        ]\n      }\n    },\n    \"f5-aaa-confd-restconf-token:restconf-token\": {\n      \"config\": {\n        \"lifetime\": 30\n      },\n      \"state\": {\n        \"lifetime\": 30\n      }\n    },\n    \"f5-openconfig-aaa-password-policy:password-policy\": {\n      \"config\": {\n        \"min-length\": 6,\n        \"required-numeric\": 0,\n        \"required-uppercase\": 0,\n        \"required-lowercase\": 0,\n        \"required-special\": 0,\n        \"required-differences\": 8,\n        \"reject-username\": false,\n        \"apply-to-root\": true,\n        \"retries\": 3,\n        \"max-login-failures\": 10,\n        \"unlock-time\": 60,\n        \"root-lockout\": true,\n        \"root-unlock-time\": 60,\n        \"max-age\": 0\n      }\n    },\n    \"f5-openconfig-aaa-tls:tls\": {\n      \"config\": {\n        \"verify-client\": false,\n        \"verify-client-depth\": 1\n      },\n      \"state\": {\n        \"verify-client\": false,\n        \"verify-client-depth\": 1\n      }\n    },\n    \"f5-primary-key:primary-key\": {\n      \"state\": {\n        \"hash\": \"At8X6fQWAYixVTLVZcWWelTG+fw/tn8MI7AVX7M1/gRgZghCB3oGiG3BoBlx5IM/pzKie5vvcY7CnUJVM5Q7dw==\",\n        \"status\": \"NONE\"\n      }\n    }\n  }\n}\n",
+        "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';",
+        "content_type": "application/yang-data+json",
+        "cookies": {},
+        "cookies_string": "",
+        "date": "Tue, 24 Oct 2023 23:22:55 GMT",
+        "elapsed": 0,
+        "etag": "\"1698-175006-642714\"",
+        "failed": false,
+        "json": {
+            "openconfig-system:aaa": {
+                "authentication": {
+                    "config": {
+                        "authentication-method": [
+                            "openconfig-aaa-types:LOCAL",
+                            "openconfig-aaa-types:TACACS_ALL"
+                        ],
+                        "f5-aaa-confd-restconf-token:basic": {
+                            "enabled": true
+                        },
+                        "f5-openconfig-aaa-clientcert:cert-auth": {
+                            "enabled": false
+                        }
+                    },
+                    "f5-aaa-confd-restconf-token:state": {
+                        "basic": {
+                            "enabled": true
+                        }
+                    },
+                    "f5-openconfig-aaa-clientcert:clientcert": {
+                        "config": {
+                            "OID": "UPN",
+                            "client-cert-name-field": "subjectname-cn"
+                        },
+                        "state": {
+                            "OID": "UPN",
+                            "client-cert-name-field": "subjectname-cn"
+                        }
+                    },
+                    "f5-openconfig-aaa-ldap:ldap": {
+                        "active_directory": false,
+                        "bind_timelimit": 10,
+                        "chase-referrals": true,
+                        "idle_timelimit": 0,
+                        "ldap_version": 3,
+                        "ssl": "off",
+                        "timelimit": 0,
+                        "tls_reqcert": "demand"
+                    },
+                    "f5-openconfig-aaa-ocsp:ocsp": {
+                        "config": {
+                            "enabled": false,
+                            "nonce-request": "on",
+                            "override-responder": "off",
+                            "response-max-age": -1,
+                            "response-time-skew": 300
+                        },
+                        "state": {
+                            "enabled": false,
+                            "nonce-request": "on",
+                            "override-responder": "off",
+                            "response-max-age": -1,
+                            "response-time-skew": 300
+                        }
+                    },
+                    "f5-system-aaa:roles": {
+                        "role": [
+                            {
+                                "config": {
+                                    "gid": 9000,
+                                    "rolename": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                },
+                                "rolename": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                "state": {
+                                    "gid": 9000,
+                                    "remote-gid": "-",
+                                    "rolename": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                }
+                            },
+                            {
+                                "config": {
+                                    "gid": 9001,
+                                    "rolename": "operator"
+                                },
+                                "rolename": "operator",
+                                "state": {
+                                    "gid": 9001,
+                                    "remote-gid": "-",
+                                    "rolename": "operator"
+                                }
+                            },
+                            {
+                                "config": {
+                                    "gid": 9003,
+                                    "rolename": "resource-********"
+                                },
+                                "rolename": "resource-********",
+                                "state": {
+                                    "gid": 9003,
+                                    "remote-gid": "-",
+                                    "rolename": "resource-********"
+                                }
+                            },
+                            {
+                                "config": {
+                                    "gid": 9100,
+                                    "rolename": "tenant-console"
+                                },
+                                "rolename": "tenant-console",
+                                "state": {
+                                    "gid": 9100,
+                                    "remote-gid": "-",
+                                    "rolename": "tenant-console"
+                                }
+                            }
+                        ]
+                    },
+                    "f5-system-aaa:users": {
+                        "user": [
+                            {
+                                "config": {
+                                    "expiry-date": "-1",
+                                    "expiry-status": "enabled",
+                                    "last-change": "2023-02-18",
+                                    "role": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                    "tally-count": 0,
+                                    "username": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                },
+                                "state": {
+                                    "authorized-keys": "-",
+                                    "expiry-date": "-1",
+                                    "expiry-status": "enabled",
+                                    "last-change": "2023-02-18",
+                                    "role": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                                    "tally-count": 0,
+                                    "username": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                                },
+                                "username": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER"
+                            },
+                            {
+                                "config": {
+                                    "expiry-date": "1",
+                                    "expiry-status": "locked",
+                                    "last-change": "0",
+                                    "role": "tenant-console",
+                                    "tally-count": 0,
+                                    "username": "cw-tenant2"
+                                },
+                                "state": {
+                                    "authorized-keys": "-",
+                                    "expiry-date": "1",
+                                    "expiry-status": "locked",
+                                    "last-change": "0",
+                                    "role": "tenant-console",
+                                    "tally-count": 0,
+                                    "username": "cw-tenant2"
+                                },
+                                "username": "cw-tenant2"
+                            },
+                            {
+                                "config": {
+                                    "expiry-date": "1",
+                                    "expiry-status": "locked",
+                                    "last-change": "0",
+                                    "role": "tenant-console",
+                                    "tally-count": 0,
+                                    "username": "jgranieri-sec-tenant"
+                                },
+                                "state": {
+                                    "authorized-keys": "-",
+                                    "expiry-date": "1",
+                                    "expiry-status": "locked",
+                                    "last-change": "0",
+                                    "role": "tenant-console",
+                                    "tally-count": 0,
+                                    "username": "jgranieri-sec-tenant"
+                                },
+                                "username": "jgranieri-sec-tenant"
+                            },
+                            {
+                                "config": {
+                                    "expiry-date": "-1",
+                                    "expiry-status": "enabled",
+                                    "last-change": "2023-02-18",
+                                    "role": "root",
+                                    "tally-count": 0,
+                                    "username": "root"
+                                },
+                                "state": {
+                                    "expiry-date": "-1",
+                                    "expiry-status": "enabled",
+                                    "last-change": "2023-02-18",
+                                    "role": "root",
+                                    "tally-count": 0,
+                                    "username": "root"
+                                },
+                                "username": "root"
+                            },
+                            {
+                                "config": {
+                                    "expiry-date": "1",
+                                    "expiry-status": "locked",
+                                    "last-change": "0",
+                                    "role": "tenant-console",
+                                    "tally-count": 0,
+                                    "username": "tenant1"
+                                },
+                                "state": {
+                                    "authorized-keys": "-",
+                                    "expiry-date": "1",
+                                    "expiry-status": "locked",
+                                    "last-change": "0",
+                                    "role": "tenant-console",
+                                    "tally-count": 0,
+                                    "username": "tenant1"
+                                },
+                                "username": "tenant1"
+                            },
+                            {
+                                "config": {
+                                    "expiry-date": "1",
+                                    "expiry-status": "locked",
+                                    "last-change": "0",
+                                    "role": "tenant-console",
+                                    "tally-count": 0,
+                                    "username": "wzhu"
+                                },
+                                "state": {
+                                    "authorized-keys": "-",
+                                    "expiry-date": "1",
+                                    "expiry-status": "locked",
+                                    "last-change": "0",
+                                    "role": "tenant-console",
+                                    "tally-count": 0,
+                                    "username": "wzhu"
+                                },
+                                "username": "wzhu"
+                            }
+                        ]
+                    },
+                    "state": {
+                        "f5-aaa-confd-restconf-token:basic": {
+                            "enabled": true
+                        },
+                        "f5-openconfig-aaa-clientcert:cert-auth": {
+                            "enabled": false
+                        }
+                    }
+                },
+                "f5-aaa-confd-restconf-token:restconf-token": {
+                    "config": {
+                        "lifetime": 30
+                    },
+                    "state": {
+                        "lifetime": 30
+                    }
+                },
+                "f5-openconfig-aaa-password-policy:password-policy": {
+                    "config": {
+                        "apply-to-root": true,
+                        "max-age": 0,
+                        "max-login-failures": 10,
+                        "min-length": 6,
+                        "reject-username": false,
+                        "required-differences": 8,
+                        "required-lowercase": 0,
+                        "required-numeric": 0,
+                        "required-special": 0,
+                        "required-uppercase": 0,
+                        "retries": 3,
+                        "root-lockout": true,
+                        "root-unlock-time": 60,
+                        "unlock-time": 60
+                    }
+                },
+                "f5-openconfig-aaa-tls:tls": {
+                    "config": {
+                        "verify-client": false,
+                        "verify-client-depth": 1
+                    },
+                    "state": {
+                        "verify-client": false,
+                        "verify-client-depth": 1
+                    }
+                },
+                "f5-primary-key:primary-key": {
+                    "state": {
+                        "hash": "At8X6fQWAYixVTLVZcWWelTG+fw/tn8MI7AVX7M1/gRgZghCB3oGiG3BoBlx5IM/pzKie5vvcY7CnUJVM5Q7dw==",
+                        "status": "NONE"
+                    }
+                }
+            }
+        },
+        "last_modified": "Tue, 24 Oct 2023 19:16:46 GMT",
+        "msg": "OK (unknown bytes)",
+        "pragma": "no-cache",
+        "redirected": false,
+        "server": "Apache",
+        "status": 200,
+        "strict_transport_security": "max-age=15552000; includeSubDomains",
+        "transfer_encoding": "chunked",
+        "url": "https://10.154.54.65:8888/restconf/data/openconfig-system:system/aaa",
+        "warnings": [
+            "Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information."
+        ],
+        "x_auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTZXNzaW9uIElEIjoiYWRtaW4xNjk4MTg5Nzc1IiwiYXV0aGluZm8iOiJhZG1pbiAxMDAwIDkwMDAgXC90bXAiLCJidWZmZXJ0aW1lbGltaXQiOiI2MDAiLCJleHAiOjE2OTgxOTE1NzUsImlhdCI6MTY5ODE4OTc3NSwicmVuZXdsaW1pdCI6IjUiLCJ1c2VyaW5mbyI6ImFkbWluIDE3Mi4xOC45LjExOSJ9.58ogMxlnP1MWhib71WAZMpukqtQxmR3UgzH5IXVU33g",
+        "x_content_type_options": "nosniff",
+        "x_frame_options": "DENY",
+        "x_xss_protection": "1; mode=block"
+    }
+}
+2023-10-24 16:22:56,016 p=99678 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:22:56,016 p=99678 u=C.Wise n=ansible | 10900-1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:24:34,241 p=99739 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:24:34,250 p=99739 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:24:34,994 p=99739 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:24:34,994 p=99739 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:24:34,997 p=99739 u=C.Wise n=ansible | TASK [Debug] *****************************************************************************************************************************************************************
+2023-10-24 16:24:35,007 p=99739 u=C.Wise n=ansible | ok: [10900-1] => {
+    "token.x_auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTZXNzaW9uIElEIjoiYWRtaW4xNjk4MTg5ODc0IiwiYXV0aGluZm8iOiJhZG1pbiAxMDAwIDkwMDAgXC90bXAiLCJidWZmZXJ0aW1lbGltaXQiOiI2MDAiLCJleHAiOjE2OTgxOTE2NzQsImlhdCI6MTY5ODE4OTg3NCwicmVuZXdsaW1pdCI6IjUiLCJ1c2VyaW5mbyI6ImFkbWluIDE3Mi4xOC45LjExOSJ9.Rl44GslLnDP83XAQZiQJN_qMToJWzlrxRaPOhIwaK8E"
+}
+2023-10-24 16:24:35,012 p=99739 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:24:35,012 p=99739 u=C.Wise n=ansible | 10900-1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:28:30,098 p=99953 u=C.Wise n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/Users/C.Wise/Projects/F5OS/rSeries_auto/gather_facts.yaml': line 28, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    ansible.builtin.uri:
+      url: url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/data/f5-tenants:tenants'
+              ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2023-10-24 16:28:48,881 p=99977 u=C.Wise n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/Users/C.Wise/Projects/F5OS/rSeries_auto/gather_facts.yaml': line 28, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    ansible.builtin.uri:
+      url: url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/data/f5-tenants:tenants'
+              ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2023-10-24 16:29:11,868 p=103 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:29:11,878 p=103 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:29:12,519 p=103 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:29:12,519 p=103 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/opt/homebrew/bin/python3.11"}, "cache_control": "private, no-cache, must-revalidate, proxy-revalidate", "changed": false, "connection": "close", "content": "{\n  \"ietf-restconf:errors\": {\n    \"error\": [\n      {\n        \"error-type\": \"application\",\n        \"error-tag\": \"malformed-message\",\n        \"error-path\": \"/openconfig-system:system/aaa\",\n        \"error-message\": \"0: End of file\"\n      }\n    ]\n  }\n}\n", "content_length": "249", "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';", "content_type": "application/yang-data+json", "date": "Tue, 24 Oct 2023 23:29:12 GMT", "elapsed": 0, "json": {"ietf-restconf:errors": {"error": [{"error-message": "0: End of file", "error-path": "/openconfig-system:system/aaa", "error-tag": "malformed-message", "error-type": "application"}]}}, "msg": "Status code was 400 and not [200]: HTTP Error 400: Bad Request", "pragma": "no-cache", "redirected": false, "server": "Apache", "status": 400, "strict_transport_security": "max-age=15552000; includeSubDomains", "url": "https://10.154.54.65:8888/restconf/data/openconfig-system:system/aaa", "x_content_type_options": "nosniff", "x_frame_options": "DENY", "x_xss_protection": "1; mode=block"}
+2023-10-24 16:29:12,520 p=103 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:29:12,520 p=103 u=C.Wise n=ansible | 10900-1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:29:31,960 p=150 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:29:31,968 p=150 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:29:32,702 p=150 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:29:32,702 p=150 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:29:32,705 p=150 u=C.Wise n=ansible | TASK [Debug] *****************************************************************************************************************************************************************
+2023-10-24 16:29:32,715 p=150 u=C.Wise n=ansible | ok: [10900-1] => {
+    "token.x_auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTZXNzaW9uIElEIjoiYWRtaW4xNjk4MTkwMTcyIiwiYXV0aGluZm8iOiJhZG1pbiAxMDAwIDkwMDAgXC90bXAiLCJidWZmZXJ0aW1lbGltaXQiOiI2MDAiLCJleHAiOjE2OTgxOTE5NzIsImlhdCI6MTY5ODE5MDE3MiwicmVuZXdsaW1pdCI6IjUiLCJ1c2VyaW5mbyI6ImFkbWluIDE3Mi4xOC45LjExOSJ9.ytY-DBhu2EIlnH0-LlN5yez8JywQd6MOFssa5sw4E_Y"
+}
+2023-10-24 16:29:32,717 p=150 u=C.Wise n=ansible | TASK [Get Tenant info] *******************************************************************************************************************************************************
+2023-10-24 16:29:33,254 p=150 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"cache_control": "private, no-cache, must-revalidate, proxy-revalidate", "changed": false, "connection": "close", "content": "{\n  \"ietf-restconf:errors\": {\n    \"error\": [\n      {\n        \"error-type\": \"application\",\n        \"error-tag\": \"missing-attribute\",\n        \"error-message\": \"missing module name for 'data'\"\n      }\n    ]\n  }\n}\n", "content_length": "210", "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';", "content_type": "application/yang-data+json", "date": "Tue, 24 Oct 2023 23:29:33 GMT", "elapsed": 0, "json": {"ietf-restconf:errors": {"error": [{"error-message": "missing module name for 'data'", "error-tag": "missing-attribute", "error-type": "application"}]}}, "msg": "Status code was 400 and not [200]: HTTP Error 400: Bad Request", "pragma": "no-cache", "redirected": false, "server": "Apache", "status": 400, "strict_transport_security": "max-age=15552000; includeSubDomains", "url": "https://10.154.54.65:8888/restconf/data/data/f5-tenants:tenants", "x_content_type_options": "nosniff", "x_frame_options": "DENY", "x_xss_protection": "1; mode=block"}
+2023-10-24 16:29:33,255 p=150 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:29:33,255 p=150 u=C.Wise n=ansible | 10900-1                    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:30:00,415 p=228 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:30:00,422 p=228 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:30:01,175 p=228 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:30:01,175 p=228 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:30:01,177 p=228 u=C.Wise n=ansible | TASK [Debug] *****************************************************************************************************************************************************************
+2023-10-24 16:30:01,187 p=228 u=C.Wise n=ansible | ok: [10900-1] => {
+    "token.x_auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTZXNzaW9uIElEIjoiYWRtaW4xNjk4MTkwMjAxIiwiYXV0aGluZm8iOiJhZG1pbiAxMDAwIDkwMDAgXC90bXAiLCJidWZmZXJ0aW1lbGltaXQiOiI2MDAiLCJleHAiOjE2OTgxOTIwMDEsImlhdCI6MTY5ODE5MDIwMSwicmVuZXdsaW1pdCI6IjUiLCJ1c2VyaW5mbyI6ImFkbWluIDE3Mi4xOC45LjExOSJ9._g-_lBG7kGtK5b6CZQY6c4HpybTZcIIHB6KlhKNB4OY"
+}
+2023-10-24 16:30:01,189 p=228 u=C.Wise n=ansible | TASK [Get Tenant info] *******************************************************************************************************************************************************
+2023-10-24 16:30:01,766 p=228 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:30:01,769 p=228 u=C.Wise n=ansible | TASK [Show Tenant] ***********************************************************************************************************************************************************
+2023-10-24 16:30:01,785 p=228 u=C.Wise n=ansible | ok: [10900-1] => {
+    "tenant": {
+        "cache_control": "private, no-cache, must-revalidate, proxy-revalidate",
+        "changed": false,
+        "connection": "close",
+        "content": "{\n  \"f5-tenants:tenants\": {\n    \"tenant\": [\n      {\n        \"name\": \"cw-tenant2\",\n        \"config\": {\n          \"name\": \"cw-tenant2\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.187\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"cw-tenant2\",\n          \"unit-key-hash\": \"MmJ+d5pdQHkSZ+GlZn2QE1ke/3A0chcX6WGhJXKf6AOA8Nd+EvJMJhEw5tPwhOQnkJxId2Ard6xv3AU4N52Vpw==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.187\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:25\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:25\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      },\n      {\n        \"name\": \"jgranieri-sec-tenant\",\n        \"config\": {\n          \"name\": \"jgranieri-sec-tenant\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.205\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 6,\n          \"memory\": \"22016\",\n          \"storage\": {\n            \"size\": 77\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"jgranieri-sec-tenant\",\n          \"unit-key-hash\": \"GafNGQffFmlW0FB4tv9wcSgXkoOxTOlO6FzxfC/TX0KbnQl6cDPl4NjqMaWW0UCKSCU/bghAppkUPaP+JYT3zg==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.205\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 6,\n          \"memory\": \"22016\",\n          \"storage\": {\n            \"size\": 77\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:24\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:24\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      },\n      {\n        \"name\": \"tenant1\",\n        \"config\": {\n          \"name\": \"tenant1\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.201\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"deployed\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"tenant1\",\n          \"unit-key-hash\": \"tK+xwlofVxYyJySnBDZtecuJWNItqOwYlZGyPTbjosmUS0NIAhL6Cp19sF+KATatcM+tihRplYX/iGp+BrOChw==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.201\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"deployed\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:28\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:28\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"cpu-allocations\": {\n            \"cpu-allocation\": [\n              {\n                \"node\": 1,\n                \"cpus\": [7, 17, 31, 41]\n              }\n            ]\n          },\n          \"status\": \"Running\",\n          \"primary-slot\": 1,\n          \"image-version\": \"BIG-IP 15.1.9 0.0.6\",\n          \"instances\": {\n            \"instance\": [\n              {\n                \"node\": 1,\n                \"pod-name\": \"tenant1-1\",\n                \"instance-id\": 1,\n                \"phase\": \"Running\",\n                \"creation-time\": \"2023-10-24T19:15:26Z\",\n                \"ready-time\": \"2023-10-24T19:15:53Z\",\n                \"status\": \"Started tenant instance\",\n                \"mgmt-mac\": \"00:94:a1:6a:b4:29\"\n              }\n            ]\n          }\n        }\n      },\n      {\n        \"name\": \"wzhu\",\n        \"config\": {\n          \"name\": \"wzhu\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.204\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [33],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 2,\n          \"memory\": \"7680\",\n          \"storage\": {\n            \"size\": 142\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"wzhu\",\n          \"unit-key-hash\": \"/QClreBTpDH8aGGbaBHLeqU/JmMeQyJqIUWeNpmpcpDme/IH5fiqxwGo7+JKjygX2GSgHo9fGOkB26tnshaPKQ==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.204\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [33],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 2,\n          \"memory\": \"7680\",\n          \"storage\": {\n            \"size\": 142\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:26\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:26\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      }\n    ]\n  }\n}\n",
+        "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';",
+        "content_type": "application/yang-data+json",
+        "cookies": {},
+        "cookies_string": "",
+        "date": "Tue, 24 Oct 2023 23:30:01 GMT",
+        "elapsed": 0,
+        "etag": "\"1698-175006-642714\"",
+        "failed": false,
+        "json": {
+            "f5-tenants:tenants": {
+                "tenant": [
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.187",
+                            "name": "cw-tenant2",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "cw-tenant2",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:25",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:25"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.187",
+                            "name": "cw-tenant2",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "MmJ+d5pdQHkSZ+GlZn2QE1ke/3A0chcX6WGhJXKf6AOA8Nd+EvJMJhEw5tPwhOQnkJxId2Ard6xv3AU4N52Vpw==",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "22016",
+                            "mgmt-ip": "10.154.54.205",
+                            "name": "jgranieri-sec-tenant",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 77
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 6,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "jgranieri-sec-tenant",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:24",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:24"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "22016",
+                            "mgmt-ip": "10.154.54.205",
+                            "name": "jgranieri-sec-tenant",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 77
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "GafNGQffFmlW0FB4tv9wcSgXkoOxTOlO6FzxfC/TX0KbnQl6cDPl4NjqMaWW0UCKSCU/bghAppkUPaP+JYT3zg==",
+                            "vcpu-cores-per-node": 6,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.201",
+                            "name": "tenant1",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "deployed",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "tenant1",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cpu-allocations": {
+                                "cpu-allocation": [
+                                    {
+                                        "cpus": [
+                                            7,
+                                            17,
+                                            31,
+                                            41
+                                        ],
+                                        "node": 1
+                                    }
+                                ]
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "image-version": "BIG-IP 15.1.9 0.0.6",
+                            "instances": {
+                                "instance": [
+                                    {
+                                        "creation-time": "2023-10-24T19:15:26Z",
+                                        "instance-id": 1,
+                                        "mgmt-mac": "00:94:a1:6a:b4:29",
+                                        "node": 1,
+                                        "phase": "Running",
+                                        "pod-name": "tenant1-1",
+                                        "ready-time": "2023-10-24T19:15:53Z",
+                                        "status": "Started tenant instance"
+                                    }
+                                ]
+                            },
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:28",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:28"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.201",
+                            "name": "tenant1",
+                            "prefix-length": 24,
+                            "primary-slot": 1,
+                            "running-state": "deployed",
+                            "status": "Running",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "tK+xwlofVxYyJySnBDZtecuJWNItqOwYlZGyPTbjosmUS0NIAhL6Cp19sF+KATatcM+tihRplYX/iGp+BrOChw==",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "7680",
+                            "mgmt-ip": "10.154.54.204",
+                            "name": "wzhu",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 142
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 2,
+                            "vlans": [
+                                33
+                            ]
+                        },
+                        "name": "wzhu",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:26",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:26"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "7680",
+                            "mgmt-ip": "10.154.54.204",
+                            "name": "wzhu",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 142
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "/QClreBTpDH8aGGbaBHLeqU/JmMeQyJqIUWeNpmpcpDme/IH5fiqxwGo7+JKjygX2GSgHo9fGOkB26tnshaPKQ==",
+                            "vcpu-cores-per-node": 2,
+                            "vlans": [
+                                33
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "last_modified": "Tue, 24 Oct 2023 19:16:46 GMT",
+        "msg": "OK (unknown bytes)",
+        "pragma": "no-cache",
+        "redirected": false,
+        "server": "Apache",
+        "status": 200,
+        "strict_transport_security": "max-age=15552000; includeSubDomains",
+        "transfer_encoding": "chunked",
+        "url": "https://10.154.54.65:8888/restconf/data/f5-tenants:tenants",
+        "x_content_type_options": "nosniff",
+        "x_frame_options": "DENY",
+        "x_xss_protection": "1; mode=block"
+    }
+}
+2023-10-24 16:30:01,791 p=228 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:30:01,791 p=228 u=C.Wise n=ansible | 10900-1                    : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:37:41,765 p=469 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:37:41,774 p=469 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:37:42,511 p=469 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:37:42,511 p=469 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:37:42,513 p=469 u=C.Wise n=ansible | TASK [Debug] *****************************************************************************************************************************************************************
+2023-10-24 16:37:42,523 p=469 u=C.Wise n=ansible | ok: [10900-1] => {
+    "token.x_auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTZXNzaW9uIElEIjoiYWRtaW4xNjk4MTkwNjYyIiwiYXV0aGluZm8iOiJhZG1pbiAxMDAwIDkwMDAgXC90bXAiLCJidWZmZXJ0aW1lbGltaXQiOiI2MDAiLCJleHAiOjE2OTgxOTI0NjIsImlhdCI6MTY5ODE5MDY2MiwicmVuZXdsaW1pdCI6IjUiLCJ1c2VyaW5mbyI6ImFkbWluIDE3Mi4xOC45LjExOSJ9.860Dze6c1em0uMxIQiH4AW4jeRLtq4Bc4o26uJSm1VE"
+}
+2023-10-24 16:37:42,524 p=469 u=C.Wise n=ansible | TASK [Get Tenant info] *******************************************************************************************************************************************************
+2023-10-24 16:37:43,057 p=469 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:37:43,060 p=469 u=C.Wise n=ansible | TASK [Show Tenant] ***********************************************************************************************************************************************************
+2023-10-24 16:37:43,074 p=469 u=C.Wise n=ansible | ok: [10900-1] => {
+    "tenant": {
+        "cache_control": "private, no-cache, must-revalidate, proxy-revalidate",
+        "changed": false,
+        "connection": "close",
+        "content": "{\n  \"f5-tenants:tenants\": {\n    \"tenant\": [\n      {\n        \"name\": \"cw-tenant2\",\n        \"config\": {\n          \"name\": \"cw-tenant2\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.187\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"cw-tenant2\",\n          \"unit-key-hash\": \"MmJ+d5pdQHkSZ+GlZn2QE1ke/3A0chcX6WGhJXKf6AOA8Nd+EvJMJhEw5tPwhOQnkJxId2Ard6xv3AU4N52Vpw==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.187\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:25\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:25\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      },\n      {\n        \"name\": \"jgranieri-sec-tenant\",\n        \"config\": {\n          \"name\": \"jgranieri-sec-tenant\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.205\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 6,\n          \"memory\": \"22016\",\n          \"storage\": {\n            \"size\": 77\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"jgranieri-sec-tenant\",\n          \"unit-key-hash\": \"GafNGQffFmlW0FB4tv9wcSgXkoOxTOlO6FzxfC/TX0KbnQl6cDPl4NjqMaWW0UCKSCU/bghAppkUPaP+JYT3zg==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.205\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 6,\n          \"memory\": \"22016\",\n          \"storage\": {\n            \"size\": 77\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:24\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:24\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      },\n      {\n        \"name\": \"tenant1\",\n        \"config\": {\n          \"name\": \"tenant1\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.201\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"deployed\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"tenant1\",\n          \"unit-key-hash\": \"tK+xwlofVxYyJySnBDZtecuJWNItqOwYlZGyPTbjosmUS0NIAhL6Cp19sF+KATatcM+tihRplYX/iGp+BrOChw==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.201\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"deployed\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:28\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:28\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"cpu-allocations\": {\n            \"cpu-allocation\": [\n              {\n                \"node\": 1,\n                \"cpus\": [7, 17, 31, 41]\n              }\n            ]\n          },\n          \"status\": \"Running\",\n          \"primary-slot\": 1,\n          \"image-version\": \"BIG-IP 15.1.9 0.0.6\",\n          \"instances\": {\n            \"instance\": [\n              {\n                \"node\": 1,\n                \"pod-name\": \"tenant1-1\",\n                \"instance-id\": 1,\n                \"phase\": \"Running\",\n                \"creation-time\": \"2023-10-24T19:15:26Z\",\n                \"ready-time\": \"2023-10-24T19:15:53Z\",\n                \"status\": \"Started tenant instance\",\n                \"mgmt-mac\": \"00:94:a1:6a:b4:29\"\n              }\n            ]\n          }\n        }\n      },\n      {\n        \"name\": \"wzhu\",\n        \"config\": {\n          \"name\": \"wzhu\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.204\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [33],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 2,\n          \"memory\": \"7680\",\n          \"storage\": {\n            \"size\": 142\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"wzhu\",\n          \"unit-key-hash\": \"/QClreBTpDH8aGGbaBHLeqU/JmMeQyJqIUWeNpmpcpDme/IH5fiqxwGo7+JKjygX2GSgHo9fGOkB26tnshaPKQ==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.204\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [33],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 2,\n          \"memory\": \"7680\",\n          \"storage\": {\n            \"size\": 142\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:26\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:26\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      }\n    ]\n  }\n}\n",
+        "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';",
+        "content_type": "application/yang-data+json",
+        "cookies": {},
+        "cookies_string": "",
+        "date": "Tue, 24 Oct 2023 23:37:43 GMT",
+        "elapsed": 0,
+        "etag": "\"1698-175006-642714\"",
+        "failed": false,
+        "json": {
+            "f5-tenants:tenants": {
+                "tenant": [
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.187",
+                            "name": "cw-tenant2",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "cw-tenant2",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:25",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:25"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.187",
+                            "name": "cw-tenant2",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "MmJ+d5pdQHkSZ+GlZn2QE1ke/3A0chcX6WGhJXKf6AOA8Nd+EvJMJhEw5tPwhOQnkJxId2Ard6xv3AU4N52Vpw==",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "22016",
+                            "mgmt-ip": "10.154.54.205",
+                            "name": "jgranieri-sec-tenant",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 77
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 6,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "jgranieri-sec-tenant",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:24",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:24"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "22016",
+                            "mgmt-ip": "10.154.54.205",
+                            "name": "jgranieri-sec-tenant",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 77
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "GafNGQffFmlW0FB4tv9wcSgXkoOxTOlO6FzxfC/TX0KbnQl6cDPl4NjqMaWW0UCKSCU/bghAppkUPaP+JYT3zg==",
+                            "vcpu-cores-per-node": 6,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.201",
+                            "name": "tenant1",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "deployed",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "tenant1",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cpu-allocations": {
+                                "cpu-allocation": [
+                                    {
+                                        "cpus": [
+                                            7,
+                                            17,
+                                            31,
+                                            41
+                                        ],
+                                        "node": 1
+                                    }
+                                ]
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "image-version": "BIG-IP 15.1.9 0.0.6",
+                            "instances": {
+                                "instance": [
+                                    {
+                                        "creation-time": "2023-10-24T19:15:26Z",
+                                        "instance-id": 1,
+                                        "mgmt-mac": "00:94:a1:6a:b4:29",
+                                        "node": 1,
+                                        "phase": "Running",
+                                        "pod-name": "tenant1-1",
+                                        "ready-time": "2023-10-24T19:15:53Z",
+                                        "status": "Started tenant instance"
+                                    }
+                                ]
+                            },
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:28",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:28"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.201",
+                            "name": "tenant1",
+                            "prefix-length": 24,
+                            "primary-slot": 1,
+                            "running-state": "deployed",
+                            "status": "Running",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "tK+xwlofVxYyJySnBDZtecuJWNItqOwYlZGyPTbjosmUS0NIAhL6Cp19sF+KATatcM+tihRplYX/iGp+BrOChw==",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "7680",
+                            "mgmt-ip": "10.154.54.204",
+                            "name": "wzhu",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 142
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 2,
+                            "vlans": [
+                                33
+                            ]
+                        },
+                        "name": "wzhu",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:26",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:26"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "7680",
+                            "mgmt-ip": "10.154.54.204",
+                            "name": "wzhu",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 142
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "/QClreBTpDH8aGGbaBHLeqU/JmMeQyJqIUWeNpmpcpDme/IH5fiqxwGo7+JKjygX2GSgHo9fGOkB26tnshaPKQ==",
+                            "vcpu-cores-per-node": 2,
+                            "vlans": [
+                                33
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "last_modified": "Tue, 24 Oct 2023 19:16:46 GMT",
+        "msg": "OK (unknown bytes)",
+        "pragma": "no-cache",
+        "redirected": false,
+        "server": "Apache",
+        "status": 200,
+        "strict_transport_security": "max-age=15552000; includeSubDomains",
+        "transfer_encoding": "chunked",
+        "url": "https://10.154.54.65:8888/restconf/data/f5-tenants:tenants",
+        "x_content_type_options": "nosniff",
+        "x_frame_options": "DENY",
+        "x_xss_protection": "1; mode=block"
+    }
+}
+2023-10-24 16:37:43,076 p=469 u=C.Wise n=ansible | TASK [Get Tenant info] *******************************************************************************************************************************************************
+2023-10-24 16:37:43,587 p=469 u=C.Wise n=ansible | fatal: [10900-1]: FAILED! => {"cache_control": "private, no-cache, must-revalidate, proxy-revalidate", "changed": false, "connection": "close", "content": "{\n  \"ietf-restconf:errors\": {\n    \"error\": [\n      {\n        \"error-type\": \"application\",\n        \"error-tag\": \"missing-attribute\",\n        \"error-message\": \"missing module name for 'openconfig-vlan'\"\n      }\n    ]\n  }\n}\n", "content_length": "221", "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';", "content_type": "application/yang-data+json", "date": "Tue, 24 Oct 2023 23:37:43 GMT", "elapsed": 0, "json": {"ietf-restconf:errors": {"error": [{"error-message": "missing module name for 'openconfig-vlan'", "error-tag": "missing-attribute", "error-type": "application"}]}}, "msg": "Status code was 400 and not [200]: HTTP Error 400: Bad Request", "pragma": "no-cache", "redirected": false, "server": "Apache", "status": 400, "strict_transport_security": "max-age=15552000; includeSubDomains", "url": "https://10.154.54.65:8888/restconf/data/openconfig-vlan", "x_content_type_options": "nosniff", "x_frame_options": "DENY", "x_xss_protection": "1; mode=block"}
+2023-10-24 16:37:43,588 p=469 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:37:43,588 p=469 u=C.Wise n=ansible | 10900-1                    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:38:26,693 p=575 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:38:26,703 p=575 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:38:27,443 p=575 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:38:27,443 p=575 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:38:27,446 p=575 u=C.Wise n=ansible | TASK [Debug] *****************************************************************************************************************************************************************
+2023-10-24 16:38:27,456 p=575 u=C.Wise n=ansible | ok: [10900-1] => {
+    "token.x_auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTZXNzaW9uIElEIjoiYWRtaW4xNjk4MTkwNzA3IiwiYXV0aGluZm8iOiJhZG1pbiAxMDAwIDkwMDAgXC90bXAiLCJidWZmZXJ0aW1lbGltaXQiOiI2MDAiLCJleHAiOjE2OTgxOTI1MDcsImlhdCI6MTY5ODE5MDcwNywicmVuZXdsaW1pdCI6IjUiLCJ1c2VyaW5mbyI6ImFkbWluIDE3Mi4xOC45LjExOSJ9.8Wu3R8UBKThG_S0IhoXWd4noty38oyv8N8Snw_j7g44"
+}
+2023-10-24 16:38:27,458 p=575 u=C.Wise n=ansible | TASK [Get Tenant info] *******************************************************************************************************************************************************
+2023-10-24 16:38:28,003 p=575 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:38:28,006 p=575 u=C.Wise n=ansible | TASK [Show Tenant] ***********************************************************************************************************************************************************
+2023-10-24 16:38:28,021 p=575 u=C.Wise n=ansible | ok: [10900-1] => {
+    "tenant": {
+        "cache_control": "private, no-cache, must-revalidate, proxy-revalidate",
+        "changed": false,
+        "connection": "close",
+        "content": "{\n  \"f5-tenants:tenants\": {\n    \"tenant\": [\n      {\n        \"name\": \"cw-tenant2\",\n        \"config\": {\n          \"name\": \"cw-tenant2\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.187\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"cw-tenant2\",\n          \"unit-key-hash\": \"MmJ+d5pdQHkSZ+GlZn2QE1ke/3A0chcX6WGhJXKf6AOA8Nd+EvJMJhEw5tPwhOQnkJxId2Ard6xv3AU4N52Vpw==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.187\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:25\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:25\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      },\n      {\n        \"name\": \"jgranieri-sec-tenant\",\n        \"config\": {\n          \"name\": \"jgranieri-sec-tenant\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.205\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 6,\n          \"memory\": \"22016\",\n          \"storage\": {\n            \"size\": 77\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"jgranieri-sec-tenant\",\n          \"unit-key-hash\": \"GafNGQffFmlW0FB4tv9wcSgXkoOxTOlO6FzxfC/TX0KbnQl6cDPl4NjqMaWW0UCKSCU/bghAppkUPaP+JYT3zg==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.205\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 6,\n          \"memory\": \"22016\",\n          \"storage\": {\n            \"size\": 77\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:24\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:24\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      },\n      {\n        \"name\": \"tenant1\",\n        \"config\": {\n          \"name\": \"tenant1\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.201\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"deployed\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"tenant1\",\n          \"unit-key-hash\": \"tK+xwlofVxYyJySnBDZtecuJWNItqOwYlZGyPTbjosmUS0NIAhL6Cp19sF+KATatcM+tihRplYX/iGp+BrOChw==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.201\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"deployed\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:28\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:28\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"cpu-allocations\": {\n            \"cpu-allocation\": [\n              {\n                \"node\": 1,\n                \"cpus\": [7, 17, 31, 41]\n              }\n            ]\n          },\n          \"status\": \"Running\",\n          \"primary-slot\": 1,\n          \"image-version\": \"BIG-IP 15.1.9 0.0.6\",\n          \"instances\": {\n            \"instance\": [\n              {\n                \"node\": 1,\n                \"pod-name\": \"tenant1-1\",\n                \"instance-id\": 1,\n                \"phase\": \"Running\",\n                \"creation-time\": \"2023-10-24T19:15:26Z\",\n                \"ready-time\": \"2023-10-24T19:15:53Z\",\n                \"status\": \"Started tenant instance\",\n                \"mgmt-mac\": \"00:94:a1:6a:b4:29\"\n              }\n            ]\n          }\n        }\n      },\n      {\n        \"name\": \"wzhu\",\n        \"config\": {\n          \"name\": \"wzhu\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.204\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [33],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 2,\n          \"memory\": \"7680\",\n          \"storage\": {\n            \"size\": 142\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"wzhu\",\n          \"unit-key-hash\": \"/QClreBTpDH8aGGbaBHLeqU/JmMeQyJqIUWeNpmpcpDme/IH5fiqxwGo7+JKjygX2GSgHo9fGOkB26tnshaPKQ==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.204\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [33],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 2,\n          \"memory\": \"7680\",\n          \"storage\": {\n            \"size\": 142\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:26\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:26\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      }\n    ]\n  }\n}\n",
+        "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';",
+        "content_type": "application/yang-data+json",
+        "cookies": {},
+        "cookies_string": "",
+        "date": "Tue, 24 Oct 2023 23:38:27 GMT",
+        "elapsed": 0,
+        "etag": "\"1698-175006-642714\"",
+        "failed": false,
+        "json": {
+            "f5-tenants:tenants": {
+                "tenant": [
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.187",
+                            "name": "cw-tenant2",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "cw-tenant2",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:25",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:25"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.187",
+                            "name": "cw-tenant2",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "MmJ+d5pdQHkSZ+GlZn2QE1ke/3A0chcX6WGhJXKf6AOA8Nd+EvJMJhEw5tPwhOQnkJxId2Ard6xv3AU4N52Vpw==",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "22016",
+                            "mgmt-ip": "10.154.54.205",
+                            "name": "jgranieri-sec-tenant",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 77
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 6,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "jgranieri-sec-tenant",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:24",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:24"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "22016",
+                            "mgmt-ip": "10.154.54.205",
+                            "name": "jgranieri-sec-tenant",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 77
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "GafNGQffFmlW0FB4tv9wcSgXkoOxTOlO6FzxfC/TX0KbnQl6cDPl4NjqMaWW0UCKSCU/bghAppkUPaP+JYT3zg==",
+                            "vcpu-cores-per-node": 6,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.201",
+                            "name": "tenant1",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "deployed",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "tenant1",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cpu-allocations": {
+                                "cpu-allocation": [
+                                    {
+                                        "cpus": [
+                                            7,
+                                            17,
+                                            31,
+                                            41
+                                        ],
+                                        "node": 1
+                                    }
+                                ]
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "image-version": "BIG-IP 15.1.9 0.0.6",
+                            "instances": {
+                                "instance": [
+                                    {
+                                        "creation-time": "2023-10-24T19:15:26Z",
+                                        "instance-id": 1,
+                                        "mgmt-mac": "00:94:a1:6a:b4:29",
+                                        "node": 1,
+                                        "phase": "Running",
+                                        "pod-name": "tenant1-1",
+                                        "ready-time": "2023-10-24T19:15:53Z",
+                                        "status": "Started tenant instance"
+                                    }
+                                ]
+                            },
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:28",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:28"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.201",
+                            "name": "tenant1",
+                            "prefix-length": 24,
+                            "primary-slot": 1,
+                            "running-state": "deployed",
+                            "status": "Running",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "tK+xwlofVxYyJySnBDZtecuJWNItqOwYlZGyPTbjosmUS0NIAhL6Cp19sF+KATatcM+tihRplYX/iGp+BrOChw==",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "7680",
+                            "mgmt-ip": "10.154.54.204",
+                            "name": "wzhu",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 142
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 2,
+                            "vlans": [
+                                33
+                            ]
+                        },
+                        "name": "wzhu",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:26",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:26"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "7680",
+                            "mgmt-ip": "10.154.54.204",
+                            "name": "wzhu",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 142
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "/QClreBTpDH8aGGbaBHLeqU/JmMeQyJqIUWeNpmpcpDme/IH5fiqxwGo7+JKjygX2GSgHo9fGOkB26tnshaPKQ==",
+                            "vcpu-cores-per-node": 2,
+                            "vlans": [
+                                33
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "last_modified": "Tue, 24 Oct 2023 19:16:46 GMT",
+        "msg": "OK (unknown bytes)",
+        "pragma": "no-cache",
+        "redirected": false,
+        "server": "Apache",
+        "status": 200,
+        "strict_transport_security": "max-age=15552000; includeSubDomains",
+        "transfer_encoding": "chunked",
+        "url": "https://10.154.54.65:8888/restconf/data/f5-tenants:tenants",
+        "x_content_type_options": "nosniff",
+        "x_frame_options": "DENY",
+        "x_xss_protection": "1; mode=block"
+    }
+}
+2023-10-24 16:38:28,023 p=575 u=C.Wise n=ansible | TASK [Get VLAN info] *********************************************************************************************************************************************************
+2023-10-24 16:38:28,553 p=575 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:38:28,556 p=575 u=C.Wise n=ansible | TASK [Show Tenant] ***********************************************************************************************************************************************************
+2023-10-24 16:38:28,570 p=575 u=C.Wise n=ansible | ok: [10900-1] => {
+    "vlan": {
+        "cache_control": "private, no-cache, must-revalidate, proxy-revalidate",
+        "changed": false,
+        "connection": "close",
+        "content": "{\n  \"openconfig-vlan:vlans\": {\n    \"vlan\": [\n      {\n        \"vlan-id\": 10,\n        \"config\": {\n          \"vlan-id\": 10,\n          \"name\": \"client-test\"\n        },\n        \"members\": {\n          \"member\": [\n            {\n              \"state\": {\n                \"interface\": \"LAG_1\"\n              }\n            }\n          ]\n        }\n      },\n      {\n        \"vlan-id\": 33,\n        \"config\": {\n          \"vlan-id\": 33,\n          \"name\": \"vlan-wzhu\"\n        }\n      },\n      {\n        \"vlan-id\": 57,\n        \"config\": {\n          \"vlan-id\": 57,\n          \"name\": \"Vlan57\"\n        },\n        \"members\": {\n          \"member\": [\n            {\n              \"state\": {\n                \"interface\": \"LAG_1\"\n              }\n            }\n          ]\n        }\n      },\n      {\n        \"vlan-id\": 74,\n        \"config\": {\n          \"vlan-id\": 74,\n          \"name\": \"Vlan74\"\n        },\n        \"members\": {\n          \"member\": [\n            {\n              \"state\": {\n                \"interface\": \"LAG_1\"\n              }\n            }\n          ]\n        }\n      },\n      {\n        \"vlan-id\": 440,\n        \"config\": {\n          \"vlan-id\": 440,\n          \"name\": \"q\"\n        }\n      },\n      {\n        \"vlan-id\": 700,\n        \"config\": {\n          \"vlan-id\": 700,\n          \"name\": \"Vlan700\"\n        },\n        \"members\": {\n          \"member\": [\n            {\n              \"state\": {\n                \"interface\": \"LAG_1\"\n              }\n            }\n          ]\n        }\n      },\n      {\n        \"vlan-id\": 911,\n        \"config\": {\n          \"vlan-id\": 911,\n          \"name\": \"inside1_on_tenant1\"\n        },\n        \"members\": {\n          \"member\": [\n            {\n              \"state\": {\n                \"interface\": \"LAG_1\"\n              }\n            }\n          ]\n        }\n      },\n      {\n        \"vlan-id\": 912,\n        \"config\": {\n          \"vlan-id\": 912,\n          \"name\": \"outside1_on_tenant1\"\n        },\n        \"members\": {\n          \"member\": [\n            {\n              \"state\": {\n                \"interface\": \"LAG_1\"\n              }\n            }\n          ]\n        }\n      },\n      {\n        \"vlan-id\": 913,\n        \"config\": {\n          \"vlan-id\": 913,\n          \"name\": \"custom\"\n        },\n        \"members\": {\n          \"member\": [\n            {\n              \"state\": {\n                \"interface\": \"LAG_1\"\n              }\n            }\n          ]\n        }\n      },\n      {\n        \"vlan-id\": 921,\n        \"config\": {\n          \"vlan-id\": 921,\n          \"name\": \"inside1_on_tenant2\"\n        },\n        \"members\": {\n          \"member\": [\n            {\n              \"state\": {\n                \"interface\": \"LAG_1\"\n              }\n            }\n          ]\n        }\n      },\n      {\n        \"vlan-id\": 922,\n        \"config\": {\n          \"vlan-id\": 922,\n          \"name\": \"outside1_on_tenant2\"\n        },\n        \"members\": {\n          \"member\": [\n            {\n              \"state\": {\n                \"interface\": \"LAG_1\"\n              }\n            }\n          ]\n        }\n      },\n      {\n        \"vlan-id\": 4094,\n        \"config\": {\n          \"vlan-id\": 4094,\n          \"name\": \"HA_Vlan\"\n        },\n        \"members\": {\n          \"member\": [\n            {\n              \"state\": {\n                \"interface\": \"LAG_1\"\n              }\n            }\n          ]\n        }\n      }\n    ]\n  }\n}\n",
+        "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';",
+        "content_type": "application/yang-data+json",
+        "cookies": {},
+        "cookies_string": "",
+        "date": "Tue, 24 Oct 2023 23:38:28 GMT",
+        "elapsed": 0,
+        "etag": "\"1698-175006-642714\"",
+        "failed": false,
+        "json": {
+            "openconfig-vlan:vlans": {
+                "vlan": [
+                    {
+                        "config": {
+                            "name": "client-test",
+                            "vlan-id": 10
+                        },
+                        "members": {
+                            "member": [
+                                {
+                                    "state": {
+                                        "interface": "LAG_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "vlan-id": 10
+                    },
+                    {
+                        "config": {
+                            "name": "vlan-wzhu",
+                            "vlan-id": 33
+                        },
+                        "vlan-id": 33
+                    },
+                    {
+                        "config": {
+                            "name": "Vlan57",
+                            "vlan-id": 57
+                        },
+                        "members": {
+                            "member": [
+                                {
+                                    "state": {
+                                        "interface": "LAG_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "vlan-id": 57
+                    },
+                    {
+                        "config": {
+                            "name": "Vlan74",
+                            "vlan-id": 74
+                        },
+                        "members": {
+                            "member": [
+                                {
+                                    "state": {
+                                        "interface": "LAG_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "vlan-id": 74
+                    },
+                    {
+                        "config": {
+                            "name": "q",
+                            "vlan-id": 440
+                        },
+                        "vlan-id": 440
+                    },
+                    {
+                        "config": {
+                            "name": "Vlan700",
+                            "vlan-id": 700
+                        },
+                        "members": {
+                            "member": [
+                                {
+                                    "state": {
+                                        "interface": "LAG_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "vlan-id": 700
+                    },
+                    {
+                        "config": {
+                            "name": "inside1_on_tenant1",
+                            "vlan-id": 911
+                        },
+                        "members": {
+                            "member": [
+                                {
+                                    "state": {
+                                        "interface": "LAG_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "vlan-id": 911
+                    },
+                    {
+                        "config": {
+                            "name": "outside1_on_tenant1",
+                            "vlan-id": 912
+                        },
+                        "members": {
+                            "member": [
+                                {
+                                    "state": {
+                                        "interface": "LAG_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "vlan-id": 912
+                    },
+                    {
+                        "config": {
+                            "name": "custom",
+                            "vlan-id": 913
+                        },
+                        "members": {
+                            "member": [
+                                {
+                                    "state": {
+                                        "interface": "LAG_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "vlan-id": 913
+                    },
+                    {
+                        "config": {
+                            "name": "inside1_on_tenant2",
+                            "vlan-id": 921
+                        },
+                        "members": {
+                            "member": [
+                                {
+                                    "state": {
+                                        "interface": "LAG_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "vlan-id": 921
+                    },
+                    {
+                        "config": {
+                            "name": "outside1_on_tenant2",
+                            "vlan-id": 922
+                        },
+                        "members": {
+                            "member": [
+                                {
+                                    "state": {
+                                        "interface": "LAG_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "vlan-id": 922
+                    },
+                    {
+                        "config": {
+                            "name": "HA_Vlan",
+                            "vlan-id": 4094
+                        },
+                        "members": {
+                            "member": [
+                                {
+                                    "state": {
+                                        "interface": "LAG_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "vlan-id": 4094
+                    }
+                ]
+            }
+        },
+        "last_modified": "Tue, 24 Oct 2023 19:16:46 GMT",
+        "msg": "OK (unknown bytes)",
+        "pragma": "no-cache",
+        "redirected": false,
+        "server": "Apache",
+        "status": 200,
+        "strict_transport_security": "max-age=15552000; includeSubDomains",
+        "transfer_encoding": "chunked",
+        "url": "https://10.154.54.65:8888/restconf/data/openconfig-vlan:vlans",
+        "x_content_type_options": "nosniff",
+        "x_frame_options": "DENY",
+        "x_xss_protection": "1; mode=block"
+    }
+}
+2023-10-24 16:38:28,575 p=575 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:38:28,576 p=575 u=C.Wise n=ansible | 10900-1                    : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-24 16:39:26,453 p=678 u=C.Wise n=ansible | PLAY [Login for token] *******************************************************************************************************************************************************
+2023-10-24 16:39:26,461 p=678 u=C.Wise n=ansible | TASK [Login via uri] *********************************************************************************************************************************************************
+2023-10-24 16:39:27,209 p=678 u=C.Wise n=ansible | [WARNING]: Platform darwin on host 10900-1 is using the discovered Python interpreter at /opt/homebrew/bin/python3.11, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+
+2023-10-24 16:39:27,210 p=678 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:39:27,212 p=678 u=C.Wise n=ansible | TASK [Debug] *****************************************************************************************************************************************************************
+2023-10-24 16:39:27,222 p=678 u=C.Wise n=ansible | ok: [10900-1] => {
+    "token.x_auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTZXNzaW9uIElEIjoiYWRtaW4xNjk4MTkwNzY3IiwiYXV0aGluZm8iOiJhZG1pbiAxMDAwIDkwMDAgXC90bXAiLCJidWZmZXJ0aW1lbGltaXQiOiI2MDAiLCJleHAiOjE2OTgxOTI1NjcsImlhdCI6MTY5ODE5MDc2NywicmVuZXdsaW1pdCI6IjUiLCJ1c2VyaW5mbyI6ImFkbWluIDE3Mi4xOC45LjExOSJ9.9s2P77XSYa2S3OHjN_aIvh5HlobJWCdC6pLyHUPjkYk"
+}
+2023-10-24 16:39:27,224 p=678 u=C.Wise n=ansible | TASK [Get Tenant info] *******************************************************************************************************************************************************
+2023-10-24 16:39:27,751 p=678 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:39:27,755 p=678 u=C.Wise n=ansible | TASK [Show Tenant] ***********************************************************************************************************************************************************
+2023-10-24 16:39:27,771 p=678 u=C.Wise n=ansible | ok: [10900-1] => {
+    "tenant": {
+        "cache_control": "private, no-cache, must-revalidate, proxy-revalidate",
+        "changed": false,
+        "connection": "close",
+        "content": "{\n  \"f5-tenants:tenants\": {\n    \"tenant\": [\n      {\n        \"name\": \"cw-tenant2\",\n        \"config\": {\n          \"name\": \"cw-tenant2\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.187\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"cw-tenant2\",\n          \"unit-key-hash\": \"MmJ+d5pdQHkSZ+GlZn2QE1ke/3A0chcX6WGhJXKf6AOA8Nd+EvJMJhEw5tPwhOQnkJxId2Ard6xv3AU4N52Vpw==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.187\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:25\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:25\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      },\n      {\n        \"name\": \"jgranieri-sec-tenant\",\n        \"config\": {\n          \"name\": \"jgranieri-sec-tenant\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.205\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 6,\n          \"memory\": \"22016\",\n          \"storage\": {\n            \"size\": 77\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"jgranieri-sec-tenant\",\n          \"unit-key-hash\": \"GafNGQffFmlW0FB4tv9wcSgXkoOxTOlO6FzxfC/TX0KbnQl6cDPl4NjqMaWW0UCKSCU/bghAppkUPaP+JYT3zg==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.205\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [10, 911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 6,\n          \"memory\": \"22016\",\n          \"storage\": {\n            \"size\": 77\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:24\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:24\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      },\n      {\n        \"name\": \"tenant1\",\n        \"config\": {\n          \"name\": \"tenant1\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.201\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"deployed\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"tenant1\",\n          \"unit-key-hash\": \"tK+xwlofVxYyJySnBDZtecuJWNItqOwYlZGyPTbjosmUS0NIAhL6Cp19sF+KATatcM+tihRplYX/iGp+BrOChw==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.201\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [911, 912],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 4,\n          \"memory\": \"14848\",\n          \"storage\": {\n            \"size\": 80\n          },\n          \"running-state\": \"deployed\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:28\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:28\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"cpu-allocations\": {\n            \"cpu-allocation\": [\n              {\n                \"node\": 1,\n                \"cpus\": [7, 17, 31, 41]\n              }\n            ]\n          },\n          \"status\": \"Running\",\n          \"primary-slot\": 1,\n          \"image-version\": \"BIG-IP 15.1.9 0.0.6\",\n          \"instances\": {\n            \"instance\": [\n              {\n                \"node\": 1,\n                \"pod-name\": \"tenant1-1\",\n                \"instance-id\": 1,\n                \"phase\": \"Running\",\n                \"creation-time\": \"2023-10-24T19:15:26Z\",\n                \"ready-time\": \"2023-10-24T19:15:53Z\",\n                \"status\": \"Started tenant instance\",\n                \"mgmt-mac\": \"00:94:a1:6a:b4:29\"\n              }\n            ]\n          }\n        }\n      },\n      {\n        \"name\": \"wzhu\",\n        \"config\": {\n          \"name\": \"wzhu\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle\",\n          \"nodes\": [1],\n          \"mgmt-ip\": \"10.154.54.204\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [33],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 2,\n          \"memory\": \"7680\",\n          \"storage\": {\n            \"size\": 142\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"f5-tenant-l2-inline:mac-block-size\": \"one\"\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          }\n        },\n        \"state\": {\n          \"name\": \"wzhu\",\n          \"unit-key-hash\": \"/QClreBTpDH8aGGbaBHLeqU/JmMeQyJqIUWeNpmpcpDme/IH5fiqxwGo7+JKjygX2GSgHo9fGOkB26tnshaPKQ==\",\n          \"type\": \"BIG-IP\",\n          \"image\": \"BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle\",\n          \"mgmt-ip\": \"10.154.54.204\",\n          \"prefix-length\": 24,\n          \"dag-ipv6-prefix-length\": 128,\n          \"gateway\": \"10.154.54.254\",\n          \"vlans\": [33],\n          \"cryptos\": \"enabled\",\n          \"vcpu-cores-per-node\": 2,\n          \"memory\": \"7680\",\n          \"storage\": {\n            \"size\": 142\n          },\n          \"running-state\": \"configured\",\n          \"mac-data\": {\n            \"base-mac\": \"00:94:a1:6a:b4:26\",\n            \"mac-pool-size\": 1,\n            \"f5-tenant-l2-inline:mac-block\": [\n              {\n                \"mac\": \"00:94:a1:6a:b4:26\"\n              }\n            ]\n          },\n          \"appliance-mode\": {\n            \"enabled\": false\n          },\n          \"status\": \"Configured\"\n        }\n      }\n    ]\n  }\n}\n",
+        "content_security_policy": "default-src 'self'; block-all-mixed-content; base-uri 'self'; frame-ancestors 'none';",
+        "content_type": "application/yang-data+json",
+        "cookies": {},
+        "cookies_string": "",
+        "date": "Tue, 24 Oct 2023 23:39:27 GMT",
+        "elapsed": 0,
+        "etag": "\"1698-175006-642714\"",
+        "failed": false,
+        "json": {
+            "f5-tenants:tenants": {
+                "tenant": [
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.187",
+                            "name": "cw-tenant2",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "cw-tenant2",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:25",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:25"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.187",
+                            "name": "cw-tenant2",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "MmJ+d5pdQHkSZ+GlZn2QE1ke/3A0chcX6WGhJXKf6AOA8Nd+EvJMJhEw5tPwhOQnkJxId2Ard6xv3AU4N52Vpw==",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "22016",
+                            "mgmt-ip": "10.154.54.205",
+                            "name": "jgranieri-sec-tenant",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 77
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 6,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "jgranieri-sec-tenant",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.7-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:24",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:24"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "22016",
+                            "mgmt-ip": "10.154.54.205",
+                            "name": "jgranieri-sec-tenant",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 77
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "GafNGQffFmlW0FB4tv9wcSgXkoOxTOlO6FzxfC/TX0KbnQl6cDPl4NjqMaWW0UCKSCU/bghAppkUPaP+JYT3zg==",
+                            "vcpu-cores-per-node": 6,
+                            "vlans": [
+                                10,
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.201",
+                            "name": "tenant1",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "deployed",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                911,
+                                912
+                            ]
+                        },
+                        "name": "tenant1",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cpu-allocations": {
+                                "cpu-allocation": [
+                                    {
+                                        "cpus": [
+                                            7,
+                                            17,
+                                            31,
+                                            41
+                                        ],
+                                        "node": 1
+                                    }
+                                ]
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIGIP-15.1.9-0.0.6.ALL-F5OS.qcow2.zip.bundle",
+                            "image-version": "BIG-IP 15.1.9 0.0.6",
+                            "instances": {
+                                "instance": [
+                                    {
+                                        "creation-time": "2023-10-24T19:15:26Z",
+                                        "instance-id": 1,
+                                        "mgmt-mac": "00:94:a1:6a:b4:29",
+                                        "node": 1,
+                                        "phase": "Running",
+                                        "pod-name": "tenant1-1",
+                                        "ready-time": "2023-10-24T19:15:53Z",
+                                        "status": "Started tenant instance"
+                                    }
+                                ]
+                            },
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:28",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:28"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "14848",
+                            "mgmt-ip": "10.154.54.201",
+                            "name": "tenant1",
+                            "prefix-length": 24,
+                            "primary-slot": 1,
+                            "running-state": "deployed",
+                            "status": "Running",
+                            "storage": {
+                                "size": 80
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "tK+xwlofVxYyJySnBDZtecuJWNItqOwYlZGyPTbjosmUS0NIAhL6Cp19sF+KATatcM+tihRplYX/iGp+BrOChw==",
+                            "vcpu-cores-per-node": 4,
+                            "vlans": [
+                                911,
+                                912
+                            ]
+                        }
+                    },
+                    {
+                        "config": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle",
+                            "mac-data": {
+                                "f5-tenant-l2-inline:mac-block-size": "one"
+                            },
+                            "memory": "7680",
+                            "mgmt-ip": "10.154.54.204",
+                            "name": "wzhu",
+                            "nodes": [
+                                1
+                            ],
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "storage": {
+                                "size": 142
+                            },
+                            "type": "BIG-IP",
+                            "vcpu-cores-per-node": 2,
+                            "vlans": [
+                                33
+                            ]
+                        },
+                        "name": "wzhu",
+                        "state": {
+                            "appliance-mode": {
+                                "enabled": false
+                            },
+                            "cryptos": "enabled",
+                            "dag-ipv6-prefix-length": 128,
+                            "gateway": "10.154.54.254",
+                            "image": "BIG-IP-15.1.8.1-0.0.3.T4-F5OS-qcow2.zip.bundle",
+                            "mac-data": {
+                                "base-mac": "00:94:a1:6a:b4:26",
+                                "f5-tenant-l2-inline:mac-block": [
+                                    {
+                                        "mac": "00:94:a1:6a:b4:26"
+                                    }
+                                ],
+                                "mac-pool-size": 1
+                            },
+                            "memory": "7680",
+                            "mgmt-ip": "10.154.54.204",
+                            "name": "wzhu",
+                            "prefix-length": 24,
+                            "running-state": "configured",
+                            "status": "Configured",
+                            "storage": {
+                                "size": 142
+                            },
+                            "type": "BIG-IP",
+                            "unit-key-hash": "/QClreBTpDH8aGGbaBHLeqU/JmMeQyJqIUWeNpmpcpDme/IH5fiqxwGo7+JKjygX2GSgHo9fGOkB26tnshaPKQ==",
+                            "vcpu-cores-per-node": 2,
+                            "vlans": [
+                                33
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "last_modified": "Tue, 24 Oct 2023 19:16:46 GMT",
+        "msg": "OK (unknown bytes)",
+        "pragma": "no-cache",
+        "redirected": false,
+        "server": "Apache",
+        "status": 200,
+        "strict_transport_security": "max-age=15552000; includeSubDomains",
+        "transfer_encoding": "chunked",
+        "url": "https://10.154.54.65:8888/restconf/data/f5-tenants:tenants",
+        "x_content_type_options": "nosniff",
+        "x_frame_options": "DENY",
+        "x_xss_protection": "1; mode=block"
+    }
+}
+2023-10-24 16:39:27,773 p=678 u=C.Wise n=ansible | TASK [Get VLAN info] *********************************************************************************************************************************************************
+2023-10-24 16:39:28,303 p=678 u=C.Wise n=ansible | ok: [10900-1]
+2023-10-24 16:39:28,306 p=678 u=C.Wise n=ansible | TASK [Show Tenant] ***********************************************************************************************************************************************************
+2023-10-24 16:39:28,318 p=678 u=C.Wise n=ansible | ok: [10900-1] => {
+    "vlan['json']['openconfig-vlan:vlans']['vlan']": [
+        {
+            "config": {
+                "name": "client-test",
+                "vlan-id": 10
+            },
+            "members": {
+                "member": [
+                    {
+                        "state": {
+                            "interface": "LAG_1"
+                        }
+                    }
+                ]
+            },
+            "vlan-id": 10
+        },
+        {
+            "config": {
+                "name": "vlan-wzhu",
+                "vlan-id": 33
+            },
+            "vlan-id": 33
+        },
+        {
+            "config": {
+                "name": "Vlan57",
+                "vlan-id": 57
+            },
+            "members": {
+                "member": [
+                    {
+                        "state": {
+                            "interface": "LAG_1"
+                        }
+                    }
+                ]
+            },
+            "vlan-id": 57
+        },
+        {
+            "config": {
+                "name": "Vlan74",
+                "vlan-id": 74
+            },
+            "members": {
+                "member": [
+                    {
+                        "state": {
+                            "interface": "LAG_1"
+                        }
+                    }
+                ]
+            },
+            "vlan-id": 74
+        },
+        {
+            "config": {
+                "name": "q",
+                "vlan-id": 440
+            },
+            "vlan-id": 440
+        },
+        {
+            "config": {
+                "name": "Vlan700",
+                "vlan-id": 700
+            },
+            "members": {
+                "member": [
+                    {
+                        "state": {
+                            "interface": "LAG_1"
+                        }
+                    }
+                ]
+            },
+            "vlan-id": 700
+        },
+        {
+            "config": {
+                "name": "inside1_on_tenant1",
+                "vlan-id": 911
+            },
+            "members": {
+                "member": [
+                    {
+                        "state": {
+                            "interface": "LAG_1"
+                        }
+                    }
+                ]
+            },
+            "vlan-id": 911
+        },
+        {
+            "config": {
+                "name": "outside1_on_tenant1",
+                "vlan-id": 912
+            },
+            "members": {
+                "member": [
+                    {
+                        "state": {
+                            "interface": "LAG_1"
+                        }
+                    }
+                ]
+            },
+            "vlan-id": 912
+        },
+        {
+            "config": {
+                "name": "custom",
+                "vlan-id": 913
+            },
+            "members": {
+                "member": [
+                    {
+                        "state": {
+                            "interface": "LAG_1"
+                        }
+                    }
+                ]
+            },
+            "vlan-id": 913
+        },
+        {
+            "config": {
+                "name": "inside1_on_tenant2",
+                "vlan-id": 921
+            },
+            "members": {
+                "member": [
+                    {
+                        "state": {
+                            "interface": "LAG_1"
+                        }
+                    }
+                ]
+            },
+            "vlan-id": 921
+        },
+        {
+            "config": {
+                "name": "outside1_on_tenant2",
+                "vlan-id": 922
+            },
+            "members": {
+                "member": [
+                    {
+                        "state": {
+                            "interface": "LAG_1"
+                        }
+                    }
+                ]
+            },
+            "vlan-id": 922
+        },
+        {
+            "config": {
+                "name": "HA_Vlan",
+                "vlan-id": 4094
+            },
+            "members": {
+                "member": [
+                    {
+                        "state": {
+                            "interface": "LAG_1"
+                        }
+                    }
+                ]
+            },
+            "vlan-id": 4094
+        }
+    ]
+}
+2023-10-24 16:39:28,323 p=678 u=C.Wise n=ansible | PLAY RECAP *******************************************************************************************************************************************************************
+2023-10-24 16:39:28,323 p=678 u=C.Wise n=ansible | 10900-1                    : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

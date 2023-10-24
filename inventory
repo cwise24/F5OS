@@ -1,0 +1,8 @@
+[rSeries]
+10900-1 
+
+[rSeries:vars]
+ansible_host=10.154.54.65
+ansible_user=admin
+ansible_password=admin
+ansible_port=8888
