@@ -6,7 +6,7 @@
 
   tasks:
 
-  - name: Login via uri 
+  - name: Login via uri (basic auth) Get token 
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/openconfig-system:system/aaa'
       return_content: true 
@@ -19,7 +19,7 @@
       validate_certs: false
     register: token
 
-  - name: Debug 
+  - name: Debug token
     ansible.builtin.debug:
       var: token.x_auth_token
 
