@@ -7,6 +7,7 @@
   tasks:
 
   - name: Login via uri (basic auth) Get token 
+    tags: basic
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/openconfig-system:system/aaa'
       return_content: true 
@@ -38,7 +39,8 @@
     ansible.builtin.debug: 
       var: tenant
 
-  - name: Get VLAN info 
+  - name: Get VLAN info
+    tags: basic
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/openconfig-vlan:vlans'
       return_content: true 
@@ -50,5 +52,24 @@
     register: vlan
 
   - name: Show Tenant 
+    tags: basic
     ansible.builtin.debug: 
       var: vlan['json']['openconfig-vlan:vlans']['vlan']
+
+  - name: Change Vlan desc 
+    ansible.builtin.uri:
+      url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data'
+      return_content: true 
+      method: PATCH 
+      headers:
+        Content-Type: application/yang-data+json
+        X-Auth-Token: "{{ token.x_auth_token }}"
+      body_format: json
+      body: "{{ lookup('ansible.builtin.file', 'vlan_name.json') }}"
+      validate_certs: false
+      status_code: 204
+    register: vlan_name 
+
+  - name: Show new name 
+    ansible.builtin.debug:
+      var: vlan_name
