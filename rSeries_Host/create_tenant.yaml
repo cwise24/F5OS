@@ -29,7 +29,7 @@
       return_content: true
       method: POST
       body_format: json 
-      body: "{{ lookup('ansible.builtin.template', 'j2/create_tenant.j2') }}"
+      body: "{{ lookup('ansible.builtin.template', '../j2/create_tenant.j2') }}"
       headers:
         Content-Type: application/yang-data+json
         X-Auth-Token: "{{ token.x_auth_token }}"
