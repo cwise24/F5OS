@@ -1,0 +1,25 @@
+{
+    "tenant": [
+        {
+            "name": "{{ tenant_name }}",
+            "config": {
+                "image": "{{ tenant_image }}",
+                "nodes": [
+                    1
+                ],
+                "mgmt-ip": "{{ tenant_mgmt_ip }}",
+                "gateway": "{{ mgmt_gw }}",
+                "prefix-length": 24,
+                "vlans": [
+                    10,
+                    911,
+                    912
+                ],
+                "vcpu-cores-per-node": 2,
+                "memory": 7680,
+                "cryptos": "enabled",
+                "running-state": "configured"
+            }
+        }
+    ]
+}
