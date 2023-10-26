@@ -11,9 +11,10 @@
                 "gateway": "{{ mgmt_gw }}",
                 "prefix-length": 24,
                 "vlans": [
-                    10,
-                    911,
-                    912
+                    {% set comma = joiner(",") %}
+                    {% for v in vlans %}
+                        {{ comma() }} {{ v }}
+                    {% endfor %}
                 ],
                 "vcpu-cores-per-node": 2,
                 "memory": 7680,
