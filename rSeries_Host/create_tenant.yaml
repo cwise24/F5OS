@@ -55,8 +55,7 @@
       status_code: 204
     register: tenant_run
 
-  - name: Check tenant status
-    tags: basic
+  - name: Check tenant status Deployed
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-tenants:tenants/tenant={{ tenant_name }}' 
       return_content: true
@@ -69,4 +68,19 @@
     register: tenant_stat
     until: tenant_stat['json']['f5-tenants:tenant'][0]['config']['running-state'] == "deployed"
     retries: 4
+    delay: 30
+
+  - name: Check tenant status Running
+    ansible.builtin.uri:
+      url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-tenants:tenants/tenant={{ tenant_name }}' 
+      return_content: true
+      method: GET
+      body_format: json 
+      headers:
+        Content-Type: application/yang-data+json
+        X-Auth-Token: "{{ token.x_auth_token }}"
+      validate_certs: false
+    register: tenant_instances
+    until: tenant_instances['json']['f5-tenants:tenant'][0]['state']['instances']['instance'][0]['phase'] == "Running"
+    retries: 5
     delay: 30
