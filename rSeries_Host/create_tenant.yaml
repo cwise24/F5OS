@@ -35,4 +35,26 @@
         X-Auth-Token: "{{ token.x_auth_token }}"
       validate_certs: false
       status_code: 201
-    register: tenant  
+    register: tenant
+
+  - name: Debug tenant 
+    ansible.builtin.debug:
+      var: tenant['failed']
+
+  - name: Run Tenant
+    ansible.builtin.uri:
+      url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-tenants:tenants/tenant={{ tenant_name }}/config/running-state' 
+      return_content: true
+      method: PATCH
+      body_format: json 
+      body: {"running-state": "deployed"}
+      headers:
+        Content-Type: application/yang-data+json
+        X-Auth-Token: "{{ token.x_auth_token }}"
+      validate_certs: false
+      status_code: 204
+    register: tenant_run
+
+  - name: debug run 
+    ansible.builtin.debug:
+      var: tenant_run
