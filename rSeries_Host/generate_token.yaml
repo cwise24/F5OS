@@ -33,12 +33,15 @@
         Content-Type: application/yang-data+json
         X-Auth-Token: "{{ token.x_auth_token }}"
       validate_certs: false
+      status_code: 200, 204
     register: tenant 
 
   - name: Show Tenant 
     ansible.builtin.debug: 
       var: tenant['json']['f5-tenants:tenants']
+    when: tenant['status'] == 200
 
   - name: Show Tenant Filter (name mgmt-ip only)
     ansible.builtin.debug: 
       msg: "{{ tenant['json']['f5-tenants:tenants'] | community.general.json_query('tenant[*].config.{Name: name,MGMT: \"mgmt-ip\"}')  }}"
+    when: tenant['status'] == 200
