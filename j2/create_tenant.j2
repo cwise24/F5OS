@@ -5,7 +5,10 @@
             "config": {
                 "image": "{{ tenant_image }}",
                 "nodes": [
-                    1
+                    {% set comma = joiner(",") %}
+                    {% for n in nodes %}
+                        {{ comma() }} {{ n }}
+                    {% endfor %}
                 ],
                 "mgmt-ip": "{{ tenant_mgmt_ip }}",
                 "gateway": "{{ mgmt_gw }}",
@@ -16,8 +19,8 @@
                         {{ comma() }} {{ v }}
                     {% endfor %}
                 ],
-                "vcpu-cores-per-node": 2,
-                "memory": 7680,
+                "vcpu-cores-per-node": "{{ cores }}",
+                "memory": "{{ mem }}",
                 "cryptos": "enabled",
                 "running-state": "configured"
             }
