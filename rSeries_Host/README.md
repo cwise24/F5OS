@@ -27,4 +27,5 @@
       body: "{{ lookup('ansible.builtin.file', 'create-vlan.json') }}"
       validate_certs: false
       status_code: 204
-    register: vlan_name ```
+    register: vlan_name
+ ```
