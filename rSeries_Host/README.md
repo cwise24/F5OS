@@ -9,3 +9,22 @@
 *10-del-tenant* playbook will delete tenant provided in the url (line 28). It is currently linked to tenant name from *create_tenant_vars*
 
 *11-upload-image* playbook will upload image from MyF5 provided link to rSeries. Paste copied link from MyF5 to line 8.
+
+*40-sys-health* playbook will gather system health and write to file health.json
+
+*show-vlan* playbook will show VLANs on system and update VLAN description on vlan 10 using *vlan_name.json*. Can also be used to create a vlan using *create-vlan.json*
+
+```
+- name: Change Vlan desc 
+    ansible.builtin.uri:
+      url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data'
+      return_content: true 
+      method: PATCH 
+      headers:
+        Content-Type: application/yang-data+json
+        X-Auth-Token: "{{ token.x_auth_token }}"
+      body_format: json
+      body: "{{ lookup('ansible.builtin.file', 'create-vlan.json') }}"
+      validate_certs: false
+      status_code: 204
+    register: vlan_name ```
