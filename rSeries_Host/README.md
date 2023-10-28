@@ -15,7 +15,7 @@
 *show-vlan* playbook will show VLANs on system and update VLAN description on vlan 10 using *vlan_name.json*. Can also be used to create a vlan using *create-vlan.json*
 
 ```
-- name: Change Vlan desc 
+  - name: Change Vlan desc 
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data'
       return_content: true 
