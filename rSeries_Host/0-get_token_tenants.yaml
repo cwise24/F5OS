@@ -20,10 +20,6 @@
       validate_certs: false
     register: token
 
-  - name: Debug token
-    ansible.builtin.debug:
-      var: token.x_auth_token
-
   - name: Get Tenant info 
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-tenants:tenants'
