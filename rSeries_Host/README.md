@@ -11,6 +11,11 @@
 ansible-playbook 3-interface.yaml --skip-tags disable_int2
 ```
 
+**4-dns** playbook will show current dns configs. Last task is to add a DNS server. To omit adding a server and to only view current configuration, run the playbook as shown below:
+```
+ansible-playbook 4-dns.yaml --skip-tags add
+```
+
 **10-del-tenant** playbook will delete tenant provided in the url (line 28). It is currently linked to tenant name from *create_tenant_vars*
 
 **11-upload-image** playbook will upload image from MyF5 provided link to rSeries. Paste copied link from MyF5 to line 8.
