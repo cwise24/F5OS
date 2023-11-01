@@ -6,6 +6,11 @@
 
 **2-create-tenant** playbook will create a tenant based on values in *create_tenant_vars* and uses the Jinja template in *j2/create_tenant*. This playbook will deploy and set tenant to running. Will check until status is running.
 
+**3-interface** playbook will show all interfaces. Last play with use of **j2/state_int.j2** can disable an interface. The example is interface 2. To run this playbook to view interfaces:
+```
+ansible-playbook 3-interface.yaml --skip-tags disable_int2
+```
+
 **10-del-tenant** playbook will delete tenant provided in the url (line 28). It is currently linked to tenant name from *create_tenant_vars*
 
 **11-upload-image** playbook will upload image from MyF5 provided link to rSeries. Paste copied link from MyF5 to line 8.
