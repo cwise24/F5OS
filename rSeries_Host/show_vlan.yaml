@@ -20,10 +20,6 @@
       validate_certs: false
     register: token
 
-  - name: Debug token
-    ansible.builtin.debug:
-      var: token.x_auth_token
-
   - name: Get VLAN info
     tags: basic
     ansible.builtin.uri:
