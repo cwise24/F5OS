@@ -22,6 +22,8 @@ ansible-playbook 4-dns.yaml --skip-tags add
 
 **40-sys-health** playbook will gather system health and write to file health.json
 
+**41-component** playbook will show all components and statuses 
+
 **show-vlan** playbook will show VLANs on system and update VLAN description on vlan 10 using *vlan_name.json*. Can also be used to create a vlan using *create-vlan.json*
 
 ```
