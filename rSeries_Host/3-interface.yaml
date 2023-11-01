@@ -56,6 +56,7 @@
       var: int_2
 
   - name: Enable/Disable interface 2
+    tags: diasable_int2
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/openconfig-interfaces:interfaces'
       return_content: true 
@@ -69,6 +70,7 @@
       status_code: 204
     register: state_int_2
 
-  - name: Show interface 
+  - name: Show interface
+    tags: disable_int2
     ansible.builtin.debug:
       var: state_int_2
