@@ -43,5 +43,5 @@
   - name: Health to file 
     ansible.builtin.copy:
       content: "{{ health | to_nice_json }}"
-      dest: ./health.json 
+      dest: ../health/{{inventory_hostname}}_health.json 
     
