@@ -22,7 +22,7 @@ ansible-playbook 4-dns.yaml --skip-tags add
 
 **40-sys-health** playbook will gather system health and write to file *[inventory_hostname]_health.json* in the health directory.
 
-**41-component** playbook will show all components and statuses 
+**41-component** playbook will show all components, status, serials etc. Also will output to file *[inventory_hostname]_compenent.json* in the health directory. 
 
 **42-qkview** playbook will generate qkview and keep checking until file is created. After qkview is created the playbook will list all qkviews in file utilities and then download newly created qkview locally(in the *health* directory). To execute this playbook (no download)
 ```
