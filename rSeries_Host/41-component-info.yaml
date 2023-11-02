@@ -33,4 +33,9 @@
 
   - name: Show component
     ansible.builtin.debug: 
-      var: component
+      var: component['json']['openconfig-platform:components']['component']
+
+  - name: Component info to file 
+    ansible.builtin.copy:
+      content: "{{ component['json']['openconfig-platform:components']['component'] | to_nice_json }}"
+      dest: ../health/{{inventory_hostname}}_component.json 
