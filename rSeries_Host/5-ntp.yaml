@@ -72,5 +72,4 @@
         X-Auth-Token: "{{ token.x_auth_token }}"
       validate_certs: false
       status_code: 204
-    register: ntp_add
-    loop: "{{ ntp_servers }}"
+    register: ntp_tz
