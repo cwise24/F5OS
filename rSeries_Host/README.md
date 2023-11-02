@@ -20,7 +20,7 @@ ansible-playbook 4-dns.yaml --skip-tags add
 
 **11-upload-image** playbook will upload image from MyF5 provided link to rSeries. Paste copied link from MyF5 to line 8.
 
-**40-sys-health** playbook will gather system health and write to file *health.json*
+**40-sys-health** playbook will gather system health and write to file *[inventory_hostname]_health.json* in the health directory.
 
 **41-component** playbook will show all components and statuses 
 
