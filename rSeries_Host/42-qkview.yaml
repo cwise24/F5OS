@@ -56,7 +56,6 @@
       msg: "{{ qk_status['json']['f5-system-diagnostics-qkview:output']['result'] | from_json | json_query('Percent') }}"
 
   - name: List qkview file
-    tags: file
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-utils-file-transfer:file/list'
       return_content: true 
@@ -70,11 +69,10 @@
     register: qk_list 
 
   - name: show file list
-    tags: file
     ansible.builtin.debug:
       var: qk_list
 
-  - name: List qkview file
+  - name: Download qkview file
     tags: file
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-utils-file-transfer:file/f5-file-download:download-file/f5-file-download:start-download'

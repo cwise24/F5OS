@@ -24,6 +24,11 @@ ansible-playbook 4-dns.yaml --skip-tags add
 
 **41-component** playbook will show all components and statuses 
 
+**42-qkview** playbook will generate qkview and keep checking until file is created. Cannot currently get qkview to download locally. To execute this playbook (no download)
+```
+ansible-playbook 42-qkview.yaml --skip-tags file
+```
+
 **show-vlan** playbook will show VLANs on system and update VLAN description on vlan 10 using *vlan_name.json*. Can also be used to create a vlan using *create-vlan.json*
 
 ```
