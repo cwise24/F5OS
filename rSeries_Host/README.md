@@ -8,12 +8,16 @@
 
 **3-interface** playbook will show all interfaces. Last play with use of **j2/state_int.j2** can disable an interface. The example is interface 2. To run this playbook to view interfaces:
 ```
-ansible-playbook 3-interface.yaml --skip-tags disable_int2
+ansible-playbook rSeries_Host/3-interface.yaml --skip-tags disable_int2
 ```
 
 **4-dns** playbook will show current dns configs. Last task is to add a DNS server. To omit adding a server and to only view current configuration, run the playbook as shown below:
 ```
-ansible-playbook 4-dns.yaml --skip-tags add
+ansible-playbook rSeries_Host/4-dns.yaml --skip-tags add
+```
+**5-ntp** playbook to view existing ntp servers, add multiple from *vars* and change time zone setting. To skip adding servers and change time zone run:
+```
+ansible-playbook rSeries_Host/5-ntp.yaml --skip-tags ntp_servers
 ```
 
 **10-del-tenant** playbook will delete tenant provided in the url (line 28). It is currently linked to tenant name from *create_tenant_vars*
@@ -26,7 +30,7 @@ ansible-playbook 4-dns.yaml --skip-tags add
 
 **42-qkview** playbook will generate qkview and keep checking until file is created. After qkview is created the playbook will list all qkviews in file utilities and then download newly created qkview locally(in the *health* directory). To execute this playbook (no download)
 ```
-ansible-playbook 42-qkview.yaml --skip-tags file
+ansible-playbook rSeries_Host/42-qkview.yaml --skip-tags file
 ```
 
 **show-vlan** playbook will show VLANs on system and update VLAN description on vlan 10 using *vlan_name.json*. Can also be used to create a vlan using *create-vlan.json*
