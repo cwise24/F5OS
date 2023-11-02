@@ -5,7 +5,7 @@
   connection: local 
 
   vars:
-    qkview_fname: testqkview 
+    qkview_fname: "{{ inventory_hostname }}"
     exclude_core: true
 
   tasks:
@@ -70,19 +70,22 @@
 
   - name: show file list
     ansible.builtin.debug:
-      var: qk_list
+      var: qk_list['json']['f5-utils-file-transfer:output']['entries']
 
   - name: Download qkview file
     tags: file
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-utils-file-transfer:file/f5-file-download:download-file/f5-file-download:start-download'
-      return_content: true 
       method: POST
-      body_format: json
-      body: { "file-name": "testqkview","file-path": "diags/shared/"}
+      body_format: form-multipart
+      body: 
+        file-name: "{{ qkview_fname }}"
+        file-path: "diags/shared/"
+        token: "{{ token.x_auth_token }}" 
       headers:
+        Content-Type : multipart/form-data
         Content-Type: application/yang-data+json
         X-Auth-Token: "{{ token.x_auth_token }}"
-      status_code: 201, 204
+      dest: ../health/{{ qkview_fname }}
+      status_code: 200
       validate_certs: false
-    register: qk_dl
