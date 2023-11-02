@@ -50,10 +50,6 @@
     until: qk_status['json']['f5-system-diagnostics-qkview:output']['result'] | from_json | json_query('Percent') == 100
     retries: 5
     delay: 150
-  
-  - name: show qk_status 
-    ansible.builtin.debug:
-      msg: "{{ qk_status['json']['f5-system-diagnostics-qkview:output']['result'] | from_json | json_query('Percent') }}"
 
   - name: List qkview file
     ansible.builtin.uri:
@@ -68,7 +64,7 @@
       validate_certs: false
     register: qk_list 
 
-  - name: show file list
+  - name: Show file list
     ansible.builtin.debug:
       var: qk_list['json']['f5-utils-file-transfer:output']['entries']
 
