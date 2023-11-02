@@ -20,11 +20,11 @@ ansible-playbook 4-dns.yaml --skip-tags add
 
 **11-upload-image** playbook will upload image from MyF5 provided link to rSeries. Paste copied link from MyF5 to line 8.
 
-**40-sys-health** playbook will gather system health and write to file health.json
+**40-sys-health** playbook will gather system health and write to file *health.json*
 
 **41-component** playbook will show all components and statuses 
 
-**42-qkview** playbook will generate qkview and keep checking until file is created. Cannot currently get qkview to download locally. To execute this playbook (no download)
+**42-qkview** playbook will generate qkview and keep checking until file is created. After qkview is created the playbook will list all qkviews in file utilities and then download newly created qkview locally(in the *health* directory). To execute this playbook (no download)
 ```
 ansible-playbook 42-qkview.yaml --skip-tags file
 ```
