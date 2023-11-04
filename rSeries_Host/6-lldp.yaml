@@ -58,7 +58,7 @@
       return_content: true 
       method: PATCH
       body_format: json 
-      body: {"openconfig-lldp:config":{"enabled":true,"f5-lldp:tlv-advertisement-state":"txonly","f5-lldp:tlvmap":"chassis-id port-id ttl port-description system-name system-description system-capabilities pvid ppvid vlan-name protocol-identity macphy link-aggregation power-mdi mfs product-model"}}
+      body: "{{ lookup('ansible.builtin.template', '../j2/lldp.j2') }}"
       headers:
         Content-Type: application/yang-data+json
         X-Auth-Token: "{{ token.x_auth_token }}"
