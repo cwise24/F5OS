@@ -68,7 +68,7 @@
       status_code: 204
     register: lag_attach_pf
 
-  - name: Attach LAG to PF
+  - name: Config LAG
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data'
       return_content: true
