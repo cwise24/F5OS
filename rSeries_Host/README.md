@@ -19,6 +19,7 @@ ansible-playbook rSeries_Host/4-dns.yaml --skip-tags add
 ```
 ansible-playbook rSeries_Host/5-ntp.yaml --skip-tags ntp_servers
 ```
+**7-lag** playbook will create a LAG interface and attach physical interfaces to the LAG. Makes use of *j2/lag_create* and *j2/lag_inter* template files.
 
 **10-del-tenant** playbook will delete tenant provided in the url (line 28). It is currently linked to tenant name from *create_tenant_vars*
 
