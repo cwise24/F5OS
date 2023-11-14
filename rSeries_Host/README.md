@@ -21,6 +21,8 @@ ansible-playbook rSeries_Host/5-ntp.yaml --skip-tags ntp_servers
 ```
 **7-lag** playbook will create a LAG interface and attach physical interfaces to the LAG. Makes use of *j2/lag_create* and *j2/lag_inter* template files.
 
+**8-del_lag** playbook will remove specific interfaces from LAG and then delete LAG interface.
+
 **10-del-tenant** playbook will delete tenant provided in the url (line 28). It is currently linked to tenant name from *create_tenant_vars*
 
 **11-upload-image** playbook will upload image from MyF5 provided link to rSeries. Paste copied link from MyF5 to line 8.
