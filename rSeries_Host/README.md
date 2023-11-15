@@ -27,7 +27,7 @@ ansible-playbook rSeries_Host/5-ntp.yaml --skip-tags ntp_servers
 
 **11-upload-image** playbook will upload image from MyF5 provided link to rSeries. Paste copied link from MyF5 to line 8.
 
-**13-vlan_interface** playbeook will attach VLAN to interface. Under the *vars:* section define list of VLANs or empty list 
+**13-vlan_interface** playbeook will attach VLAN to interface. Under the *vars:* section define list of VLANs or empty list. Uses *j2/vlan_interface.j2* to template payload.
 
 Empty:
 ```
