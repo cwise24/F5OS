@@ -27,6 +27,22 @@ ansible-playbook rSeries_Host/5-ntp.yaml --skip-tags ntp_servers
 
 **11-upload-image** playbook will upload image from MyF5 provided link to rSeries. Paste copied link from MyF5 to line 8.
 
+**13-vlan_interface** playbeook will attach VLAN to interface. Under the *vars:* section define list of VLANs or empty list 
+
+Empty:
+```
+ vars:
+    interface: "2.0"
+    trunked_vlans: []
+```
+List of VLANs:
+```
+ vars:
+    interface: "2.0"
+    trunked_vlans:
+      - 440
+      - 901
+```
 **40-sys-health** playbook will gather system health and write to file *[inventory_hostname]_health.json* in the health directory.
 
 **41-component** playbook will show all components, status, serials etc. Also will output to file *[inventory_hostname]_compenent.json* in the health directory. 
