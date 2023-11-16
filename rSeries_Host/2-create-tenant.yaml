@@ -9,11 +9,11 @@
 
   tasks:
 
-  - name: Login via uri (basic auth) Get token 
+  - name: Login via uri (basic auth) Get token
     tags: basic
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/openconfig-system:system/aaa'
-      return_content: true 
+      return_content: true
       force_basic_auth: true
       method: GET
       user: "{{ ansible_user }}"
@@ -23,12 +23,12 @@
       validate_certs: false
     register: token
 
-  - name: Create new tenant 
+  - name: Create new tenant
     ansible.builtin.uri:
-      url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-tenants:tenants' 
+      url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-tenants:tenants'
       return_content: true
       method: POST
-      body_format: json 
+      body_format: json
       body: "{{ lookup('ansible.builtin.template', '../j2/create_tenant.j2') }}"
       headers:
         Content-Type: application/yang-data+json
@@ -37,16 +37,16 @@
       status_code: 201
     register: tenant
 
-  - name: Debug tenant 
+  - name: Debug tenant
     ansible.builtin.debug:
       var: tenant['failed']
 
   - name: Run Tenant
     ansible.builtin.uri:
-      url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-tenants:tenants/tenant={{ tenant_name }}/config/running-state' 
+      url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-tenants:tenants/tenant={{ tenant_name }}/config/running-state'
       return_content: true
       method: PATCH
-      body_format: json 
+      body_format: json
       body: {"running-state": "deployed"}
       headers:
         Content-Type: application/yang-data+json
@@ -57,10 +57,10 @@
 
   - name: Check tenant status Running
     ansible.builtin.uri:
-      url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-tenants:tenants/tenant={{ tenant_name }}' 
+      url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-tenants:tenants/tenant={{ tenant_name }}'
       return_content: true
       method: GET
-      body_format: json 
+      body_format: json
       headers:
         Content-Type: application/yang-data+json
         X-Auth-Token: "{{ token.x_auth_token }}"
