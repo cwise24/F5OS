@@ -27,6 +27,18 @@ ansible-playbook rSeries_Host/5-ntp.yaml --skip-tags ntp_servers
 
 **11-upload-image** playbook will upload image from MyF5 provided link to rSeries. Paste copied link from MyF5 to line 8.
 
+**12-server_group** playbook will create a AAA server group. Example to create a server-group of type RADIUS and includes two servers within the radius server-group named *radius_clear*.
+
+To create:
+```
+ansible-playbook 12-server_group.yaml --skip-tags delete
+```
+
+To delete:
+```
+ansible-playbook 12-server_group.yaml -tags basic,delete
+```
+
 **13-vlan_interface** playbeook will attach VLAN to interface. Under the *vars:* section define list of VLANs or empty list. Uses *j2/vlan_interface.j2* to template payload.
 
 Empty:
