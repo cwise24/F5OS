@@ -27,7 +27,12 @@ ansible-playbook rSeries_Host/5-ntp.yaml --skip-tags ntp_servers
 
 **11-upload-image** playbook will upload image from MyF5 provided link to rSeries. Paste copied link from MyF5 to line 8.
 
-**12-server_group** playbook will create a AAA server group. Example to create a server-group of type RADIUS and includes two servers within the radius server-group named *radius_clear*. Playbook uses two Jinja templates *j2/create_server_grp.j2* to create the server-group and *j2/add_server_grp.j2* to add individual servers to the group.
+**12-server_group** playbook will create a AAA server group. Example to create a server-group of type RADIUS and includes two servers within the radius server-group named *radius_clear*. Playbook uses two Jinja templates 
+
+ - *j2/create_server_grp.j2* 
+    - to create the server-group
+ - *j2/add_server_grp.j2* 
+    - to add individual servers to the group.
 
 To create:
 ```
