@@ -60,6 +60,18 @@ List of VLANs:
       - 440
       - 901
 ```
+
+**14-acl** playbook can create and delete management ACL's. Uses Jinja tempalte *j2/acl_create.j2* when creating. 
+
+To Create:
+```
+ansible-playbook rSeries_Host/14-acl.yaml --skip-tags del_acl
+```
+To Delete:
+```
+ansible-playbook rSeries_Host/14-acl.yaml --tags basic,del_acl
+```
+
 **40-sys-health** playbook will gather system health and write to file *[inventory_hostname]_health.json* in the health directory.
 
 **41-component** playbook will show all components, status, serials etc. Also will output to file *[inventory_hostname]_compenent.json* in the health directory. 
@@ -68,6 +80,8 @@ List of VLANs:
 ```
 ansible-playbook rSeries_Host/42-qkview.yaml --skip-tags file
 ```
+
+**43-reset-mgmt-counters** playbook will use api to reset management interface counters.
 
 **show-vlan** playbook will show VLANs on system and update VLAN description on vlan 10 using *vlan_name.json*. Can also be used to create a vlan using *create-vlan.json*
 
