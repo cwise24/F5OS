@@ -1,6 +1,6 @@
 # F5OS
 
-Ansible calls to r10900 in Seattle Lab
+Ansible playbooks to r10900 Lab
 
 
 # Connections 
