@@ -23,7 +23,7 @@
   - name: Get ACL info 
     ansible.builtin.uri:
       url: 'https://{{ ansible_host }}:{{ ansible_port }}/restconf/data/f5-reset-counters:reset/f5-reset-mgmt-counters:mgmt-counters'
-      return_content: true
+      return_content: false
       method: POST
       headers:
         Content-Type: application/yang-data+json
