@@ -2,7 +2,7 @@
 10900-2 
 
 [rSeries:vars]
-ansible_host=10.154.54.65
+ansible_host=x.x.x.x
 ansible_user=admin
-ansible_password=admin
+ansible_password=Supersecret
 ansible_port=8888
